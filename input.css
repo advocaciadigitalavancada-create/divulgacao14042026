@@ -5,13 +5,13 @@
 
 :root {
   --primary-bg: #1A1A1A;
-  --accent-red: #FF2B2B;
+  --accent-red: #FF0000;
   --text-white: #F7FAFC;
   --text-secondary: rgba(247, 250, 252, 0.8);
   --darker-bg: #0F0F0F;
   --lighter-bg: #2A2A2A;
   --card-bg: rgba(42, 42, 42, 0.4);
-  --border-subtle: rgba(255, 43, 43, 0.1);
+  --border-subtle: rgba(255, 0, 0, 0.1);
 }
 
 @layer base {
@@ -194,5 +194,9 @@
 
   .bg-accent {
     background-color: var(--accent-red);
+  }
+
+  .h-42 {
+    height: 10.5rem;
   }
 }
