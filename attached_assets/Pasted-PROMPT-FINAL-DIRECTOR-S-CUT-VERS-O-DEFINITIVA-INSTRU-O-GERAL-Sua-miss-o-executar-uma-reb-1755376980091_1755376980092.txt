@@ -1,0 +1,60 @@
+PROMPT FINAL "DIRECTOR'S CUT" (VERSÃO DEFINITIVA)
+
+INSTRUÇÃO GERAL:
+Sua missão é executar uma rebranding e reformulação visual completa do site existente, agindo como um diretor de arte e um estrategista de lançamento. O objetivo é transformar a página atual no portal de lançamento da "Edição 0" do novo produto chamado "IA para Advogados: Manual de Campo". O resultado final deve ser visualmente impecável, altamente persuasivo e, acima de tudo, autêntico, costurando a jornada pessoal do autor na narrativa principal do site.
+TAREFA 1: REBRANDING GLOBAL - IDENTIDADE E NARRATIVA
+Novo Nome do Produto: O produto agora se chama "IA para Advogados: Manual de Campo".
+Ação de Substituição: Execute uma busca e substituição rigorosa. Encontre TODAS as menções ao nome antigo ("Arca do Conhecimento") e substitua pelo novo nome. Isso inclui textos, metadados e alt-tags de imagens.
+Refinamento da Narrativa: A metáfora evoluiu. A "Caixa de Pandora" (a tempestade de IA) continua sendo o problema. A solução não é mais um refúgio ("Arca"), mas sim a ferramenta que permite navegar e dominar essa tempestade ("Manual de Campo"). Modifique frases que remetem a abrigo para uma linguagem de capacitação, ferramenta e estratégia militar.
+Onde se lia "embarcar na Arca", altere para "dominar as táticas do Manual".
+Onde se lia "garantir seu lugar na Arca", altere para "assegurar seu acesso ao Manual de Campo".
+TAREFA 2: IMPLEMENTAR A NOVA IDENTIDADE VISUAL "PREMIUM TECH"
+Guia de Estilo Visual Global (Regras Inegociáveis):
+Paleta de Cores:
+Fundo Principal: Um cinza-carvão profundo e fosco (#1A1A1A). Deve parecer sofisticado, não um simples preto.
+Destaque Primário: Um vermelho elegante e confiante (#E53E3E). Evite tons alaranjados ou vibrantes demais. Use-o para headlines, ícones, bordas de destaque e botões.
+Texto Principal: Um branco suave, quase platina (#F7FAFC). Evite branco puro (#FFFFFF) para não cansar a vista.
+Texto Secundário / Bordas Sutis: Use um cinza médio-claro (#A0AEC0) ou o branco suave com 70% de opacidade para descrições, criando uma hierarquia visual clara.
+Tipografia (A Alma do Design):
+Fonte Principal: "Inter". Garanta que ela seja importada corretamente (via Google Fonts) e aplicada a todo o corpo do site.
+Hierarquia de Texto:
+Títulos Principais (H1): Peso font-black (900), text-transform: uppercase, com um leve letter-spacing (espaçamento entre letras) para impor presença.
+Títulos de Seção (H2): Peso font-bold (700).
+Corpo do Texto e Parágrafos: Peso font-normal (400), com line-height: 1.7 (espaçamento entre linhas) para máxima legibilidade e uma sensação de calma e clareza.
+Estilo dos Elementos:
+Ícones: Substitua TODOS os ícones existentes por um único pack de ícones de linha (outline), estilo "Feather Icons" ou similar. Devem ser minimalistas, com stroke-width (espessura da linha) consistente e na cor vermelha de destaque (#E53E3E).
+Cards: Devem ter um padding interno generoso (ex: p-8). As bordas devem ser sutilmente arredondadas (rounded-lg) e com uma bordagem finíssima na cor cinza-escuro (#333333) para delimitar o espaço. Adicione uma leve sombra projetada (box-shadow) para dar uma sensação de profundidade e flutuação.
+Botões (CTAs): Devem ser convidativos. Fundo sólido na cor vermelha (#E53E3E), texto branco com font-bold e uppercase. Ao passar o mouse (hover), o botão deve ter uma transição suave (transition-colors duration-300) para um tom de vermelho um pouco mais escuro (#C53030) e mover-se levemente para cima (transform: translateY(-2px)), dando feedback de interatividade.
+TAREFA 3: EXECUTAR A ESTRATÉGIA DE LANÇAMENTO DA "EDIÇÃO 0"
+Banner de Urgência "Smart": Adicione um banner fixo no topo (position: sticky; top: 0;).
+Texto: "SEMANA DA ADVOCACIA: O acesso à Edição 0 do Manual de Campo fecha em:"
+Funcionalidade: Insira um contador regressivo que mostre dias, horas, minutos e segundos. Ele deve ser funcional e preciso.
+Refinamento da Oferta:
+Título da Seção: Altere para um convite mais pessoal: "Eu estou reunindo a primeira turma de Pioneiros. Esta é a sua chance de fazer parte."
+Subtítulo: "As portas se abrem apenas uma vez. O acesso à Edição 0 se encerra definitivamente em 7 dias."
+Lista de Benefícios: Reforce o valor de cada item.
+"Acesso Vitalício e Irrestrito à Edição 0 do Manual de Campo em PDF."
+"Status Oficial de Pioneiro com preço especial e congelado para sempre."
+"+50 Prompts Jurídicos de Alta Conversão (Copiar e Colar)."
+"+10 Templates Essenciais para acelerar sua prática."
+"Acesso ao Grupo Exclusivo de Pioneiros no WhatsApp para networking e suporte."
+Atualização dos CTAs: Altere o texto de TODOS os botões de compra para: "QUERO ME TORNAR UM PIONEIRO". Este copy é mais poderoso pois vende identidade e status, não apenas um produto.
+FAQ Estratégico do Lançamento:
+P1: "Por que esta é uma 'Edição 0'?"
+R1: "A Edição 0 é um lançamento estratégico. Você tem a chance única de acessar nosso manual de campo pelo menor preço que será oferecido, antes de todo o mercado. Como um Pioneiro, seu feedback será fundamental para lapidar a versão final que será publicada oficialmente, inclusive em formato físico."
+P2: "O que acontece se eu não comprar agora?"
+R2: "O acesso à Edição 0 e ao status de Pioneiro será encerrado quando o contador zerar. Após isso, o produto sairá do ar por tempo indeterminado para aprimoramentos com base no feedback dos primeiros membros. Não há previsão de reabertura ou de um novo lançamento."
+TAREFA 4: REFINAMENTO FINAL DO COPYWRITING (INTEGRAÇÃO DA HISTÓRIA PESSOAL)
+Seção "A Dor": Abaixo do título "O campo de batalha está lotado...", adicione a seguinte citação em itálico para criar conexão e empatia:“Eu conheço bem esse campo de batalha. Minha carreira começou com pilhas de papel e a rotina do fórum. Senti cada um desses pontos na pele antes de encontrar um novo caminho.”
+Seção "A Solução": Ao final do parágrafo que descreve o Manual, adicione a seguinte frase para reforçar a origem e a praticidade do produto:“Este manual não é teoria. É o resultado direto da minha jornada, da advocacia nômade à descoberta da IA, compilado para que você possa fazer a mesma transição, só que em uma fração do tempo.”
+Seção de Autores (O Coração da Autoridade):
+Foto: Utilize a imagem 'olha note luz boa.JPG', que transmite foco e profissionalismo.
+Biografia: Substitua qualquer texto anterior pela seguinte bio narrativa, que une a jornada pessoal com as credenciais:Carlos [Sobrenome]
+Com uma jornada que começou organizando arquivos de papel e evoluiu para a liderança de equipes digitais, Carlos viveu na prática a profunda transformação da advocacia. Advogado atuante desde 2012, especialista em Direito do Trabalho 1, foi Conselheiro da OAB/SC (gestão 2019-2021) e membro de comissões na OAB Joinville, unindo a experiência dos tribunais com uma paixão pela inovação2. Entusiasta da tecnologia, ministra palestras sobre ferramentas digitais e IA desde 20193, e ao se deparar com a revolução da IA generativa, encontrou sua missão: criar o manual de campo que ele gostaria de ter recebido para traduzir essa revolução em performance e resultados para seus colegas.
+
+
+Seção de Prova Social (Gatilho da Comunidade):
+Título: "A Opinião de Quem Já Está no Campo de Batalha"
+Estrutura: Crie 3 cards de depoimento. Cada um deve ter espaço para uma foto circular do advogado, seu nome e especialidade (Ex: "Dra. Ana Clara, Especialista em Direito Digital") e o texto do depoimento entre aspas. Use texto de placeholder por enquanto.
+OBJETIVO FINAL:
+O site deve ser transformado em uma máquina de lançamento. Cada pixel, cada palavra, cada cor deve trabalhar em conjunto para criar uma experiência que gere desejo, confiança e uma urgência irresistível, convidando o visitante a se tornar um dos Pioneiros do "IA para Advogados: Manual de Campo", guiado por um profissional que já trilhou o mesmo caminho.
