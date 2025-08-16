@@ -17,6 +17,6 @@ app.get("/", (req,res) => {
   res.sendFile(path.join(__dirname, "pages/index.html"))
 })
 
-app.listen(5000, () => {
-  console.log("🚀 Shipping on port 5000")
+app.listen(3000, '0.0.0.0', () => {
+  console.log("🚀 Shipping on port 3000")
 })
