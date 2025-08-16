@@ -1,0 +1,44 @@
+PROMPT DE REFINAMENTO VISUAL ELEGANTE PARA O REPLIT AI (SITE EXISTENTE)
+INSTRUÇÃO GERAL:
+Seu objetivo é refinar a identidade visual do site existente, tornando-o mais elegante, profissional, moderno e sofisticado, de acordo com a identidade visual que discutimos (fundo cinza-carvão, destaque vermelho elegante, branco suave, tipografia Inter/Montserrat, espaçamento generoso e elementos geométricos sutis). O conteúdo e a estrutura atual do site devem ser mantidos.
+REFINAMENTOS GERAIS (APLICAR EM TODO O SITE):
+PALETA DE CORES PRECISA:
+Fundo: Garanta que o fundo de todas as seções seja consistente no tom de cinza-carvão escuro (#1A1A1A). Remova qualquer variação ou tom diferente.
+DESTAQUE VERMELHO: Padronize o vermelho para o código #E53E3E. Aplique-o de forma consistente em todos os títulos em destaque, links, elementos de foco e como cor primária dos botões.
+TEXTO: Utilize #F7FAFC para o texto principal. Para textos secundários (descrições, legendas), use a mesma cor com 70-80% de opacidade para suavizar o contraste.
+TIPOGRAFIA ELEGANTE E CONSISTENTE (FONTE "INTER"):
+Force a utilização da fonte "Inter" em todo o site. Se já estiver, refine os pesos e tamanhos para criar uma hierarquia visual mais clara e sofisticada.
+Títulos Principais (H1, H2): Use font-extrabold ou font-black, com um tamanho de fonte maior e uma margem inferior generosa.
+Títulos de Seção (H3, H4): Use font-semibold ou font-bold, com um tamanho ligeiramente menor que os títulos principais.
+Corpo do Texto (Parágrafos, Listas): Use font-normal ou font-medium, com um line-height de 1.5 a 1.7 para melhor legibilidade. Ajuste o font-size para um tamanho confortável (entre 16px e 18px para desktop).
+ESPAÇAMENTO PREMIUM:
+Padding: Aumente o padding superior e inferior de todas as seções em pelo menos 20-30% para criar mais respiro vertical.
+Margin: Ajuste as margens entre os elementos dentro de cada seção para evitar aglomeração visual. Dê mais espaço para os títulos se separarem do conteúdo.
+Espaçamento Interno (Cards/Boxes): Aumente o padding interno dos containers que agrupam informações (como os 4 pontos da "Dor" e os módulos do "Arsenal") para que o texto e os ícones não fiquem tão "colados" nas bordas.
+REFINAMENTOS ESPECÍFICOS POR SEÇÃO:
+BLOCO DE ABERTURA (HERO):
+Aumente a sutileza dos elementos geométricos de fundo (os contornos dos quadrados). Use uma cor branca ou cinza muito clara com uma opacidade de apenas 5-10%.
+Refine o estilo do botão "Quero Dominar o Futuro da Advocacia". Use a cor #E53E3E sólida, texto branco font-bold e adicione uma leve sombra (shadow-md) e um efeito de hover mais suave (por exemplo, clareando levemente a cor para #EB5E5E). As bordas devem ser sutilmente arredondadas (rounded-md).
+Garanta que o vídeo de fundo (se houver) tenha uma sobreposição escura suave (preto com 50-60% de opacidade) para melhorar a legibilidade do texto.
+A DOR (O CAMPO DE BATALHA):
+Substitua COMPLETAMENTE os ícones de alerta amarelos por ícones de linha (outline) minimalistas e elegantes na cor #E53E3E. O tamanho dos ícones deve ser consistente e proporcional ao texto.
+Centralize o texto dentro de cada "card" ou alinhe verticalmente ao centro para criar uma aparência mais organizada e profissional.
+Adicione uma borda muito sutil (cinza escuro #333333 com 1px de espessura) aos cards para defini-los visualmente no fundo preto, mas sem serem intrusivos. As bordas podem ser levemente arredondadas (rounded-md).
+A SOLUÇÃO (APRESENTANDO A ARCA):
+Se possível, melhore a apresentação visual da capa do livro, talvez adicionando uma leve sombra ou reflexo para dar mais profundidade.
+Destaque o nome "[Nome do Livro]" usando a cor #E53E3E e um peso de fonte maior (font-bold).
+O CONTEÚDO (O ARSENAL):
+Redesenhe os ícones dentro dos "cards" de conteúdo. Utilize ícones de linha (outline) modernos e minimalistas na cor #E53E3E. Certifique-se de que o estilo dos ícones seja consistente entre os quatro módulos.
+Alinhe os ícones no centro da parte superior de cada card e aumente o espaçamento entre o ícone, o título e a descrição.
+OS GUIAS DA JORNADA (AUTORES):
+Mantenha as fotos dos autores circulares, mas adicione uma borda sutil na cor #E53E3E com uma espessura fina (1-2px).
+Centralize os nomes e as breves descrições abaixo das fotos.
+A OFERTA FINAL:
+Destaque o preço principal com uma fonte maior e peso font-black.
+O botão de compra deve seguir o mesmo estilo do botão da seção de abertura (#E53E3E sólido, texto branco font-bold, hover suave, shadow-md, rounded-md).
+Melhore visualmente a lista de benefícios (os bullet points). Use um ícone de checkmark elegante na cor #E53E3E em vez de um caractere simples.
+INSTRUÇÕES ADICIONAIS PARA A IA:
+Priorize a consistência visual em todo o site.
+Busque um design que transmita confiança, profissionalismo e modernidade.
+Mantenha a responsividade do site para diferentes dispositivos.
+Use as cores hexadecimais fornecidas para garantir a precisão das cores.
