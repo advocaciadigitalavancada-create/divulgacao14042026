@@ -595,7 +595,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(229, 62, 62, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 43, 43, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: 8;
 }
@@ -639,9 +639,9 @@ p {
 }
 
 .btn-primary:hover {
-  background: #C53030;
+  background: #E01E1E;
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(229, 62, 62, 0.4);
+  box-shadow: 0 15px 35px rgba(255, 43, 43, 0.4);
 }
 
 .icon-container {
@@ -653,7 +653,7 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  box-shadow: 0 10px 25px rgba(229, 62, 62, 0.3);
+  box-shadow: 0 10px 25px rgba(255, 43, 43, 0.3);
 }
 
 .book-mockup {
@@ -662,7 +662,7 @@ p {
 }
 
 .book-cover {
-  background: linear-gradient(135deg, var(--accent-red) 0%, #E61C1C 100%);
+  background: linear-gradient(135deg, var(--accent-red) 0%, #D41515 100%);
   border-radius: 12px;
   box-shadow: 
       0 20px 40px rgba(0, 0, 0, 0.4),
@@ -766,8 +766,8 @@ p {
   height: 100%;
 }
 
-.h-32{
-  height: 8rem;
+.h-24{
+  height: 6rem;
 }
 
 .h-8{
@@ -798,8 +798,8 @@ p {
   width: 100%;
 }
 
-.w-32{
-  width: 8rem;
+.w-24{
+  width: 6rem;
 }
 
 .w-8{
@@ -1093,13 +1093,13 @@ p {
 
 :root {
   --primary-bg: #1A1A1A;
-  --accent-red: #E53E3E;
+  --accent-red: #FF2B2B;
   --text-white: #F7FAFC;
   --text-secondary: rgba(247, 250, 252, 0.8);
   --darker-bg: #0F0F0F;
   --lighter-bg: #2A2A2A;
   --card-bg: rgba(42, 42, 42, 0.4);
-  --border-subtle: rgba(229, 62, 62, 0.1);
+  --border-subtle: rgba(255, 43, 43, 0.1);
 }
 
 .hover\:opacity-100:hover{
@@ -1107,12 +1107,12 @@ p {
 }
 
 @media (min-width: 768px){
-  .md\:h-40{
-    height: 10rem;
+  .md\:h-32{
+    height: 8rem;
   }
 
-  .md\:w-40{
-    width: 10rem;
+  .md\:w-32{
+    width: 8rem;
   }
 
   .md\:grid-cols-2{
