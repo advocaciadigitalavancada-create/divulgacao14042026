@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,9 +8,36 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="out.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>Arca do Conhecimento - Domine o Futuro da Advocacia</title>
+  <title>IA para Advogados: Manual de Campo - Domine o Futuro da Advocacia</title>
 </head>
 <body class="bg-primary text-primary font-inter">
+
+  <!-- BANNER DE URGÊNCIA FIXO -->
+  <div class="urgency-banner">
+    <div class="max-w-7xl mx-auto px-8 py-4 text-center">
+      <p class="text-lg font-bold text-white mb-2">
+        🔥 SEMANA DA ADVOCACIA: O acesso à Edição 0 do Manual de Campo fecha em:
+      </p>
+      <div id="countdown" class="countdown-timer">
+        <div class="countdown-item">
+          <span id="days" class="countdown-number">7</span>
+          <span class="countdown-label">DIAS</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours" class="countdown-number">00</span>
+          <span class="countdown-label">HORAS</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes" class="countdown-number">00</span>
+          <span class="countdown-label">MIN</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds" class="countdown-number">00</span>
+          <span class="countdown-label">SEG</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- SEÇÃO 1: BLOCO DE ABERTURA -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
@@ -41,10 +69,10 @@
         A Caixa de Pandora da IA foi aberta na advocacia.
       </h1>
       <p class="body-text text-xl md:text-2xl lg:text-3xl font-light mb-16 max-w-5xl mx-auto leading-relaxed">
-        No fundo da caixa, a esperança: um guia prático para você sobreviver à tempestade, dominar a tecnologia e se transformar em uma potência de alta performance.
+        No fundo da caixa, a esperança: um manual de campo para você sobreviver à tempestade, dominar as táticas e se transformar em uma potência de alta performance.
       </p>
       <button class="btn-primary">
-        QUERO DOMINAR O FUTURO DA ADVOCACIA
+        QUERO ME TORNAR UM PIONEIRO
       </button>
     </div>
   </section>
@@ -52,43 +80,57 @@
   <!-- SEÇÃO 2: A DOR -->
   <section class="section-bg-alternate">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-24">
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-16">
         O campo de batalha está lotado. <span class="text-accent">Ficar parado é retroceder.</span>
       </h2>
+      
+      <div class="text-center mb-24">
+        <p class="body-text text-xl italic text-secondary max-w-4xl mx-auto leading-relaxed">
+          "Eu conheço bem esse campo de batalha. Minha carreira começou com pilhas de papel e a rotina do fórum. Senti cada um desses pontos na pele antes de encontrar um novo caminho."
+        </p>
+      </div>
 
       <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
         <div class="card-elegant elegant-card-spacing">
           <div class="flex items-center justify-center mb-8">
-            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
+            <div class="icon-container">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
           </div>
           <p class="body-text text-center text-xl leading-relaxed">O próprio Judiciário já opera com mais de 140 projetos de IA e não vai esperar por você.</p>
         </div>
 
         <div class="card-elegant elegant-card-spacing">
           <div class="flex items-center justify-center mb-8">
-            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
+            <div class="icon-container">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
           </div>
           <p class="body-text text-center text-xl leading-relaxed">O risco real de se tornar um "advogado analógico", obsoleto e irrelevante.</p>
         </div>
 
         <div class="card-elegant elegant-card-spacing">
           <div class="flex items-center justify-center mb-8">
-            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
-            </svg>
+            <div class="icon-container">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+              </svg>
+            </div>
           </div>
           <p class="body-text text-center text-xl leading-relaxed">Pressão de um mercado com 1 advogado para cada 153 habitantes.</p>
         </div>
 
         <div class="card-elegant elegant-card-spacing">
           <div class="flex items-center justify-center mb-8">
-            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
-            </svg>
+            <div class="icon-container">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+              </svg>
+            </div>
           </div>
           <p class="body-text text-center text-xl leading-relaxed">Serviços comoditizados e honorários cada vez mais achatados.</p>
         </div>
@@ -100,7 +142,7 @@
   <section class="section-bg">
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-24">
-        Apresentando <span class="text-accent">Arca do Conhecimento</span>: Sua Bússola Digital.
+        Apresentando <span class="text-accent">IA para Advogados: Manual de Campo</span>: Sua Ferramenta de Domínio.
       </h2>
 
       <div class="flex flex-col lg:flex-row items-center gap-20">
@@ -109,9 +151,9 @@
             <div class="w-80 h-96 book-cover mx-auto relative custom-shadow">
               <div class="absolute inset-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                 <div class="text-center">
-                  <div class="text-2xl font-black text-white mb-4">ARCA DO</div>
-                  <div class="text-2xl font-black text-accent mb-4">CONHECIMENTO</div>
-                  <div class="text-sm text-secondary font-medium">Guia prático para advocacia com IA</div>
+                  <div class="text-xl font-black text-white mb-4">IA PARA ADVOGADOS</div>
+                  <div class="text-xl font-black text-accent mb-4">MANUAL DE CAMPO</div>
+                  <div class="text-sm text-secondary font-medium">Edição 0 - Pioneiros</div>
                 </div>
               </div>
             </div>
@@ -119,8 +161,11 @@
         </div>
 
         <div class="lg:w-1/2">
-          <p class="body-text text-2xl md:text-3xl font-light leading-relaxed">
+          <p class="body-text text-2xl md:text-3xl font-light leading-relaxed mb-8">
             Este não é um livro acadêmico. É um <span class="text-accent font-bold">manual de campo</span>, uma caixa de ferramentas testada e validada, para você aplicar a IA na sua rotina de forma simples e imediata.
+          </p>
+          <p class="body-text text-xl font-light leading-relaxed text-secondary">
+            Este manual não é teoria. É o resultado direto da minha jornada, da advocacia tradicional à descoberta da IA, compilado para que você possa fazer a mesma transição, só que em uma fração do tempo.
           </p>
         </div>
       </div>
@@ -189,66 +234,116 @@
         Criado por <span class="text-accent">Advogados</span>, para Advogados.
       </h2>
 
-      <div class="grid md:grid-cols-2 gap-16 mb-20">
-        <!-- Autor 1 -->
-        <div class="text-center">
-          <div class="w-52 h-52 bg-gray-600 rounded-full mx-auto mb-8 flex items-center justify-center custom-shadow author-image">
-            <div class="w-48 h-48 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center">
-              <span class="text-4xl font-black text-accent">Carlos</span>
-            </div>
-          </div>
-          <h3 class="section-subtitle text-2xl font-bold mb-6">Carlos</h3>
-          <p class="body-text text-center text-lg max-w-md mx-auto">Advogado especialista em tecnologia jurídica, pioneiro na implementação de IA em escritórios de advocacia.</p>
+      <div class="max-w-4xl mx-auto text-center mb-20">
+        <!-- Foto do Carlos -->
+        <div class="w-64 h-64 bg-gray-600 rounded-full mx-auto mb-12 flex items-center justify-center custom-shadow author-image overflow-hidden">
+          <img src="./attached_assets/olha note luz boa (1)_1755376939610.JPG" 
+               alt="Carlos" 
+               class="w-full h-full object-cover">
         </div>
-
-        <!-- Autor 2 -->
-        <div class="text-center">
-          <div class="w-52 h-52 bg-gray-600 rounded-full mx-auto mb-8 flex items-center justify-center custom-shadow author-image">
-            <div class="w-48 h-48 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center">
-              <span class="text-4xl font-black text-accent">Paola</span>
-            </div>
-          </div>
-          <h3 class="section-subtitle text-2xl font-bold mb-6">Paola</h3>
-          <p class="body-text text-center text-lg max-w-md mx-auto">Advogada e consultora em transformação digital, especialista em otimização de processos jurídicos com IA.</p>
+        
+        <h3 class="section-subtitle text-3xl font-bold mb-8">Carlos [Sobrenome]</h3>
+        
+        <div class="body-text text-lg max-w-4xl mx-auto leading-relaxed space-y-6">
+          <p>
+            Com uma jornada que começou organizando arquivos de papel e evoluiu para a liderança de equipes digitais, Carlos viveu na prática a profunda transformação da advocacia.
+          </p>
+          <p>
+            Advogado atuante desde 2012, especialista em Direito do Trabalho, foi Conselheiro da OAB/SC (gestão 2019-2021) e membro de comissões na OAB Joinville, unindo a experiência dos tribunais com uma paixão pela inovação.
+          </p>
+          <p>
+            Entusiasta da tecnologia, ministra palestras sobre ferramentas digitais e IA desde 2019, e ao se deparar com a revolução da IA generativa, encontrou sua missão: <span class="text-accent font-bold">criar o manual de campo que ele gostaria de ter recebido</span> para traduzir essa revolução em performance e resultados para seus colegas.
+          </p>
         </div>
       </div>
 
       <p class="body-text text-2xl md:text-3xl text-center font-light">
-        Nós também estamos no campo de batalha e criamos o guia que <span class="text-accent font-bold">gostaríamos de ter recebido.</span>
+        Eu também estou no campo de batalha e criei o guia que <span class="text-accent font-bold">gostaria de ter recebido.</span>
       </p>
     </div>
   </section>
 
-  <!-- SEÇÃO FINAL -->
+  <!-- SEÇÃO DE PROVA SOCIAL -->
   <section class="section-bg-alternate">
     <div class="max-w-7xl mx-auto px-8">
       <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-24">
-        O Futuro da Advocacia tem dois lados. <span class="text-accent">Qual você escolhe?</span>
+        A Opinião de Quem Já Está no <span class="text-accent">Campo de Batalha</span>
       </h2>
 
+      <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <!-- Depoimento 1 -->
+        <div class="card-elegant elegant-card-spacing text-center">
+          <div class="w-20 h-20 bg-gray-600 rounded-full mx-auto mb-6 flex items-center justify-center custom-shadow">
+            <span class="text-lg font-bold text-accent">A</span>
+          </div>
+          <h4 class="section-subtitle text-lg font-bold mb-4">Dra. Ana Clara</h4>
+          <p class="text-secondary text-sm mb-6">Especialista em Direito Digital</p>
+          <p class="body-text text-base leading-relaxed">
+            "Este manual chegou no momento exato. Finalmente consegui implementar IA no meu escritório sem comprometer a ética profissional."
+          </p>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="card-elegant elegant-card-spacing text-center">
+          <div class="w-20 h-20 bg-gray-600 rounded-full mx-auto mb-6 flex items-center justify-center custom-shadow">
+            <span class="text-lg font-bold text-accent">R</span>
+          </div>
+          <h4 class="section-subtitle text-lg font-bold mb-4">Dr. Ricardo Santos</h4>
+          <p class="text-secondary text-sm mb-6">Advogado Trabalhista</p>
+          <p class="body-text text-base leading-relaxed">
+            "A diferença na minha produtividade foi imediata. Os prompts prontos economizaram horas do meu dia."
+          </p>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="card-elegant elegant-card-spacing text-center">
+          <div class="w-20 h-20 bg-gray-600 rounded-full mx-auto mb-6 flex items-center justify-center custom-shadow">
+            <span class="text-lg font-bold text-accent">M</span>
+          </div>
+          <h4 class="section-subtitle text-lg font-bold mb-4">Dra. Mariana Lima</h4>
+          <p class="text-secondary text-sm mb-6">Sócia de Escritório</p>
+          <p class="body-text text-base leading-relaxed">
+            "Implementei as estratégias em toda a equipe. O retorno do investimento foi quase instantâneo."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO FINAL - OFERTA DA EDIÇÃO 0 -->
+  <section class="section-bg-alternate">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-16">
+        Eu estou reunindo a primeira turma de <span class="text-accent">Pioneiros</span>.
+      </h2>
+      
+      <h3 class="section-subtitle text-2xl md:text-3xl text-center mb-24 text-secondary">
+        Esta é a sua chance de fazer parte. As portas se abrem apenas uma vez.
+      </h3>
+
       <div class="card-elegant p-16 mb-20 max-w-5xl mx-auto">
-        <h3 class="section-subtitle text-3xl font-bold text-center mb-16">O que você recebe:</h3>
+        <h3 class="section-subtitle text-3xl font-bold text-center mb-16">O que você recebe como Pioneiro:</h3>
 
         <div class="grid md:grid-cols-2 gap-8 mb-24">
           <div class="flex items-center space-x-6 elegant-spacing">
             <div class="checkmark-icon">✓</div>
-            <p class="body-text text-lg leading-relaxed">Livro completo em PDF (100 páginas)</p>
+            <p class="body-text text-lg leading-relaxed">Acesso Vitalício e Irrestrito à Edição 0 do Manual de Campo em PDF</p>
           </div>
           <div class="flex items-center space-x-6 elegant-spacing">
             <div class="checkmark-icon">✓</div>
-            <p class="body-text text-lg leading-relaxed">Biblioteca de Prompts prontos para usar</p>
+            <p class="body-text text-lg leading-relaxed">Status Oficial de Pioneiro com preço especial e congelado para sempre</p>
           </div>
           <div class="flex items-center space-x-6 elegant-spacing">
             <div class="checkmark-icon">✓</div>
-            <p class="body-text text-lg leading-relaxed">Acesso ao Grupo Exclusivo no WhatsApp</p>
+            <p class="body-text text-lg leading-relaxed">+50 Prompts Jurídicos de Alta Conversão (Copiar e Colar)</p>
           </div>
           <div class="flex items-center space-x-6 elegant-spacing">
             <div class="checkmark-icon">✓</div>
-            <p class="body-text text-lg leading-relaxed">Templates de documentos otimizados</p>
+            <p class="body-text text-lg leading-relaxed">+10 Templates Essenciais para acelerar sua prática</p>
           </div>
           <div class="flex items-center space-x-6 elegant-spacing">
             <div class="checkmark-icon">✓</div>
-            <p class="body-text text-lg leading-relaxed">Guias de implementação</p>
+            <p class="body-text text-lg leading-relaxed">Acesso ao Grupo Exclusivo de Pioneiros no WhatsApp</p>
           </div>
           <div class="flex items-center space-x-6 elegant-spacing">
             <div class="checkmark-icon">✓</div>
@@ -261,10 +356,10 @@
             <div class="text-secondary text-2xl line-through mb-4">De R$ 199</div>
             <div class="price-highlight">Por apenas R$ 97</div>
           </div>
-          <p class="text-yellow-400 font-bold mb-20 text-xl">🔥 Oferta de Lançamento - Limitada!</p>
+          <p class="text-yellow-400 font-bold mb-20 text-xl">🔥 Oferta de Lançamento da Edição 0 - Limitada!</p>
 
           <button class="btn-primary text-xl px-16 py-6">
-            SIM, QUERO GARANTIR MEU LUGAR NA ADVOCACIA DE ALTA PERFORMANCE
+            QUERO ME TORNAR UM PIONEIRO
           </button>
         </div>
       </div>
@@ -283,7 +378,17 @@
         <h3 class="section-title text-3xl font-bold text-center mb-16">Perguntas Frequentes</h3>
 
         <div class="card-elegant p-10">
-          <h4 class="section-subtitle text-xl font-bold mb-6">O livro é adequado para iniciantes em IA?</h4>
+          <h4 class="section-subtitle text-xl font-bold mb-6">Por que esta é uma "Edição 0"?</h4>
+          <p class="body-text text-lg leading-relaxed">A Edição 0 é um lançamento estratégico. Você tem a chance única de acessar nosso manual de campo pelo menor preço que será oferecido, antes de todo o mercado. Como um Pioneiro, seu feedback será fundamental para lapidar a versão final que será publicada oficialmente, inclusive em formato físico.</p>
+        </div>
+
+        <div class="card-elegant p-10">
+          <h4 class="section-subtitle text-xl font-bold mb-6">O que acontece se eu não comprar agora?</h4>
+          <p class="body-text text-lg leading-relaxed">O acesso à Edição 0 e ao status de Pioneiro será encerrado quando o contador zerar. Após isso, o produto sairá do ar por tempo indeterminado para aprimoramentos com base no feedback dos primeiros membros. Não há previsão de reabertura ou de um novo lançamento.</p>
+        </div>
+
+        <div class="card-elegant p-10">
+          <h4 class="section-subtitle text-xl font-bold mb-6">O manual é adequado para iniciantes em IA?</h4>
           <p class="body-text text-lg leading-relaxed">Sim! O conteúdo foi desenvolvido pensando em advogados que nunca usaram IA antes, com explicações claras e passo a passo.</p>
         </div>
 
@@ -303,9 +408,35 @@
   <!-- Footer -->
   <footer class="py-16 bg-darker border-t border-accent">
     <div class="max-w-7xl mx-auto px-8 text-center">
-      <p class="text-secondary text-lg">&copy; 2024 Arca do Conhecimento. Todos os direitos reservados.</p>
+      <p class="text-secondary text-lg">&copy; 2024 IA para Advogados: Manual de Campo. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- Script do Countdown -->
+  <script>
+    // Definir data final (7 dias a partir de agora)
+    const countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+
+    const countdown = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = String(days).padStart(2, '0');
+      document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
+      document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
+      document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
+
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "ENCERRADO";
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>

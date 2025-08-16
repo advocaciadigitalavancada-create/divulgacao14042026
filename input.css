@@ -10,9 +10,9 @@
   --darker-bg: #0F0F0F;
   --card-bg: rgba(42, 42, 42, 0.6);
   --accent-red: #E53E3E;
-  --accent-red-hover: #EB5E5E;
+  --accent-red-hover: #C53030;
   --text-white: #F7FAFC;
-  --text-secondary: rgba(247, 250, 252, 0.75);
+  --text-secondary: #A0AEC0;
   --border-subtle: #333333;
 }
 
@@ -29,6 +29,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-inter {
   font-family: 'Inter', sans-serif;
+}
+
+/* BANNER DE URGÊNCIA */
+.urgency-banner {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, var(--accent-red) 0%, #C53030 100%);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.countdown-number {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: white;
+  line-height: 1;
+}
+
+.countdown-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.25rem;
 }
 
 .section-bg {
@@ -87,11 +130,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
   box-shadow: 0 8px 25px rgba(229, 62, 62, 0.3);
   font-family: 'Inter', sans-serif;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
   background: var(--accent-red-hover);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 15px 35px rgba(229, 62, 62, 0.4);
 }
 
@@ -157,10 +201,18 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-red);
   font-size: 1.5rem;
   font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(229, 62, 62, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .author-image {
-  border: 2px solid var(--accent-red);
+  border: 3px solid var(--accent-red);
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -180,6 +232,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-white);
   margin-bottom: 3rem;
   line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .section-subtitle {
@@ -222,4 +276,52 @@ h1, h2, h3, h4, h5, h6 {
   height: 2.5rem;
   color: var(--accent-red);
   stroke-width: 1.5;
+}
+
+/* Utility Classes */
+.bg-primary {
+  background-color: var(--primary-bg);
+}
+
+.bg-darker {
+  background-color: var(--darker-bg);
+}
+
+.text-primary {
+  color: var(--text-white);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--accent-red);
+}
+
+.border-accent {
+  border-color: var(--accent-red);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .countdown-timer {
+    gap: 1rem;
+  }
+  
+  .countdown-item {
+    padding: 0.5rem 1rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .price-highlight {
+    font-size: 2.5rem;
+  }
 }
