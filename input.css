@@ -154,36 +154,6 @@
       radial-gradient(ellipse at 80% 80%, rgba(229, 62, 62, 0.06) 0%, transparent 40%);
     pointer-events: none;
   }
-
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-}
-
-@layer utilities {
-  .text-primary {
-    color: var(--text-white);
-  }
-  
-  .text-secondary {
-    color: var(--text-secondary);
-  }
-  
-  .text-accent {
-    color: var(--accent-red);
-  }
-  
-  .bg-primary {
-    background-color: var(--primary-bg);
-  }
-  
-  .bg-darker {
-    background-color: var(--darker-bg);
-  }
-  
-  .border-accent {
-    border-color: var(--accent-red);
-  }
 }
 
 @layer utilities {
