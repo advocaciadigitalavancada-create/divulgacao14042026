@@ -1,0 +1,371 @@
+NSTRUÇÃO GERAL:
+Você é um web designer e desenvolvedor especialista em IA. Sua missão é criar uma landing page de uma única página, moderna e de alta conversão para um livro digital chamado "Arca do Conhecimento". A página deve ser totalmente responsiva para desktop e mobile.
+
+CONCEITO E NARRATIVA:
+O público-alvo são advogados. A narrativa da página é a jornada da "Caixa de Pandora" (o caos e a ameaça da IA na advocacia) para a "Arca do Conhecimento" (a segurança e o poder que o livro oferece). O tom deve ser impactante, urgente, mas também inspirador, mostrando que existe uma solução clara.
+
+IDENTIDADE VISUAL E ESTILO:
+
+Estilo Geral: Minimalista, moderno, tecnológico e sofisticado. Use elementos gráficos de linhas geométricas abstratas para conectar as seções.
+
+Paleta de Cores Principal:
+
+Fundo principal: Preto (#000000 ou similar).
+
+Cor de Destaque (títulos, botões, links): Vermelho vibrante e de impacto (#FF0000 ou similar).
+
+Cor de Texto: Branco (#FFFFFF).
+
+Tipografia: Use uma fonte sans-serif moderna e de fácil leitura, como Montserrat, Roboto ou Inter. Crie uma forte hierarquia visual com tamanhos e pesos de fonte diferentes para títulos, subtítulos e corpo de texto.
+
+ESTRUTURA DA PÁGINA (SEÇÃO POR SEÇÃO):
+
+SEÇÃO 1: BLOCO DE ABERTURA (A PRIMEIRA IMPRESSÃO)
+
+Background: Use como fundo o vídeo curto de um farol moderno e geométrico em meio a uma tempestade violenta à noite. O farol deve emitir um poderoso feixe de luz vermelho.
+
+Título (Headline): A Caixa de Pandora da IA foi aberta na advocacia. (Texto em vermelho, grande e impactante).
+
+Subtítulo: No fundo dela, restou a esperança: um guia prático para você sobreviver à tempestade, dominar a tecnologia e se transformar em uma potência de alta performance. (Texto em branco).
+
+Botão (CTA): Crie um botão grande, em vermelho vibrante com texto em branco, com o texto: QUERO DOMINAR O FUTURO DA ADVOCACIA.
+
+SEÇÃO 2: A DOR (CONEXÃO COM A REALIDADE DO ADVOGADO)
+
+Título da Seção: O campo de batalha está lotado. Ficar parado é retroceder.
+
+Conteúdo: Apresente os itens a seguir como bullet points rápidos e impactantes, talvez com um pequeno ícone de "alerta" ou "x" vermelho ao lado de cada um.
+
+Pressão de um mercado com 1 advogado para cada 153 habitantes.
+
+Serviços comoditizados e honorários cada vez mais achatados.
+
+O próprio Judiciário já opera com mais de 140 projetos de IA e não vai esperar por você.
+
+O risco real de se tornar um "advogado analógico", obsoleto e irrelevante.
+
+SEÇÃO 3: A APRESENTAÇÃO DA SOLUÇÃO (A "ARCA")
+
+Título da Seção: Apresentando [Nome do Livro]: Sua Arca do Conhecimento na Era Digital.
+
+Visual: Destaque a imagem da capa do livro em um mock-up 3D.
+
+Conteúdo: Um parágrafo curto e direto em branco: "Este não é um livro acadêmico. É um manual de campo, uma caixa de ferramentas testada e validada, para você aplicar a IA na sua rotina de forma simples e imediata."
+
+SEÇÃO 4: O CONTEÚDO (O QUE TEM DENTRO DO BAÚ DO TESOURO)
+
+Título da Seção: O Arsenal que Você Irá Dominar:
+
+Conteúdo: Crie quatro colunas ou cartões com um ícone geométrico e minimalista no topo de cada um.
+
+Item 1: Ícone de Mapa. Título: O Mapa da Revolução. Texto: Entenda por que a IA é inevitável e como se posicionar estrategicamente.
+
+Item 2: Ícone de Caixa de Ferramentas. Título: Sua Caixa de Ferramentas. Texto: Domine na prática o Gemini, ChatGPT e outras ferramentas com prompts prontos para usar.
+
+Item 3: Ícone de Gráfico de Performance. Título: Performance Máxima. Texto: Aprenda a usar a IA para economizar horas, analisar processos e tomar decisões mais inteligentes.
+
+Item 4: Ícone de Escudo. Título: Escudo Ético. Texto: Proteja-se dos riscos de sigilo, alucinações e responsabilidade profissional.
+
+SEÇÃO 5: OS GUIAS DA JORNADA (APRESENTAÇÃO DOS AUTORES)
+
+Título da Seção: Criado por Advogados, para Advogados.
+
+Conteúdo: Crie uma seção com duas colunas. Em cada coluna, coloque a foto de um autor (Carlos e Paola) e uma breve descrição. Abaixo das duas colunas, adicione a frase de conexão: "Nós também estamos no campo de batalha e criamos o guia que gostaríamos de ter recebido."
+
+SEÇÃO 6: A OFERTA FINAL (O CONVITE PARA EMBARCAR)
+
+Título da Seção: O Futuro da Advocacia tem dois lados. Qual você escolhe?
+
+Conteúdo: Crie uma lista clara (bullet points com ícones de check ✔️) de tudo que a pessoa recebe na compra (Ex: Livro em PDF, Bônus de Prompts, Acesso a Grupo Exclusivo, etc.). Apresente o preço de forma clara, com destaque para uma oferta de lançamento.
+
+Botão (CTA Final): Crie um botão final, grande e vermelho, com o texto: SIM, QUERO GARANTIR MEU LUGAR NA ADVOCACIA DE ALTA PERFORMANCE.
+
+Detalhes Finais: Adicione uma pequena seção para Garantia de Satisfação e Perguntas Frequentes (FAQ) no final da página.
+
+OBJETIVO FINAL:
+A página deve fluir de forma lógica e persuasiva, começando com a urgência do problema (estilo preto e vermelho) e terminando com a clareza e segurança da solução (a "Arca"). Cada seção deve levar naturalmente à próxima, culminando na conversão.
+
+
+
+
+
+
+qual framework devo usar?
+
+
+Mostrar raciocínio
+Você interrompeu esta resposta
+
+
+
+
+
+qual framework devo usar?
+
+HTML, CSS, JS (Static)
+
+
+
+The languages that make up the web. HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
+
+replit
+
+
+
+React Javascript
+
+
+
+Online React Editor and IDE: compile, run, and host React apps
+
+replit
+
+
+
+HTML, CSS, JS (Auto Refresh)
+
+
+
+A starter for building a website with HTML, CSS and JS, powered by Vite. HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
+
+replit
+
+
+
+TypeScript
+
+
+
+Typescript is a strict syntactical superset of JavaScript and adds optional static typing to the language.
+
+replit
+
+
+
+Flask
+
+
+
+Minimalist Python web framework.
+
+replit
+
+
+
+Next.js
+
+
+
+Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
+
+replit
+
+
+
+django
+
+
+
+Get started with Django! The python framework for perfectionists on a deadline.
+
+replit
+
+
+
+React TypeScript
+
+
+
+Build a React application with TypeScript
+
+replit
+
+
+
+Portfolio Site Template
+
+
+
+A Portfolio Site Template for Repl.it template jam!
+
+replit
+
+
+
+VueJS
+
+
+
+Vue.js is a library for building user interfaces in JavaScript. This template uses Vite to serve your app.
+
+replit
+
+
+
+Rails
+
+
+
+Ruby on Rails, or Rails, is a server-side web application framework written in Ruby
+
+replit
+
+
+
+Vanilla Vite
+
+
+
+Write blazing fast web apps with Vite
+
+replit
+
+
+
+go http template
+
+--
+
+turbio
+
+
+
+TailwindCSS Template (Node.js)
+
+Simple template for making websites with tailwind. Run the repl to build the css files.
+
+ErikoXDev
+
+
+
+Socket.io Chat Template
+
+
+
+Build a chat app using socket.io!
+
+replit
+
+
+
+Hugo
+
+
+
+Hugo is a fast and easy static site generator.
+
+replit
+
+
+
+Blazor
+
+A framework for building interactive client-side web UI with .NET
+
+SixBeeps
+
+
+
+Remark.js Slideshow
+
+Template for creating slideshows with Markdown, hosted on replit.
+
+replitguillaume
+
+
+
+Jekyll (Using Regular Themes Setup)
+
+Get started with a Jekyll static website template with regular style type theme on Replit. You can modify the styling by making changes to the _sass files and styles.sass file in the home page. To add an item to all posts or pages, concider adding it to the appropriate layout in the You can also get a Jekyll template with Gem-base theme or barebone Jekyll on Replit without any styling. It's ready to go so you can just hit run and start coding!AV
+
+
+
+AvicNdugu
+
+
+
+Deno + Oak Web Framework
+
+Template of the Oak Web Framework on the Deno Runtime for TypeScriptRO
+
+
+
+RoBlockHead
+
+
+
+Sinatra
+
+Sinatra is a domain-specific language for building web applications in Ruby. It is designed to be lightweight and easy to use, and is an alternative to more full-featured web application frameworks such as Ruby on Rails. Sinatra allows you to build web applications quickly, with minimal code and configuration, and is well-suited for building simple, single-page applications or for prototyping. It uses a routing system to map URLs to code, and makes it easy to define actions that are triggered by specific HTTP verbs (such as GET, POST, and DELETE).
+
+hugo
+
+
+
+Gatsby.js
+
+Open in a new Tab This doesn't open in iframe due to some split error (I don't know why its happening) Gatsby is a React-based open source framework for creating websites. Whether your site has 100 pages or 100,000 pages—if you care deeply about performance, scalability, and built-in security—you'll love building with us. Start pulling data from your favorite headless CMS easily!
+
+AdityaAnanya007
+
+
+
+Elm
+
+A delightful language for reliable web applications.
+
+Larry-Stone
+
+
+
+
+Mostrar raciocínio
+Excelente pergunta. Você está no ponto exato em que a estratégia encontra a execução técnica. A lista de opções que o Replit oferece é vasta, e a escolha certa pode economizar muito tempo e dor de cabeça.
+
+Vamos analisar isso com base em TUDO o que planejamos. Temos dois caminhos principais a seguir.
+
+Caminho 1: A Rota Direta e Rápida (Usando a IA do Replit)
+Recomendação principal: NENHUM DESSES FRAMEWORKS.
+
+Sei que parece contraintuitivo, mas, com base em nossa conversa, o plano inicial e mais eficaz é usar a ferramenta de criação por IA do Replit.
+
+Raciocínio:
+
+O Prompt Completo: Nós criamos um prompt extremamente detalhado. Esse prompt não é para você dar a um framework; é para você dar diretamente à IA do Replit para que ela gere o código para você.
+
+Velocidade: Seu objetivo é lançar a landing page e começar a vender o livro. A IA vai gerar a estrutura completa em minutos. Escolher um framework e programar do zero levaria dias ou semanas, dependendo da sua experiência.
+
+Foco no Objetivo: Seu tempo é mais valioso ajustando a copy, promovendo o livro e falando com seu público do que depurando código CSS.
+
+Como proceder: Na tela inicial do Replit, em vez de escolher um template, procure a opção de criar um site com IA (pode ser "Create with AI", "Build with AI", ou similar) e cole o nosso prompt completo lá.
+
+Caminho 2: A Rota do Código (Se você realmente quiser programar)
+Se você tem o objetivo de programar a página manualmente (seja para aprender, ter controle absoluto ou por preferência pessoal), então a escolha do framework se torna crucial.
+
+Analisando a lista que você enviou e o nosso projeto, aqui está a minha recomendação:
+
+A Melhor Opção (Simplicidade e Performance):
+1º Lugar: HTML, CSS, JS (Auto Refresh)
+
+Por quê? Sua landing page é um site "estático". Ela não precisa de um banco de dados complexo ou de lógica de servidor. Ela precisa ser bonita, carregar rápido e ter um formulário de pagamento (que pode ser integrado via um serviço externo como Gumroad, Hotmart ou Stripe.js). Este template lhe dá exatamente o que você precisa, sem nenhum peso extra. É a escolha mais profissional para este tipo de projeto.
+
+2º Lugar: TailwindCSS Template (Node.js)
+
+Por quê? Se você gosta de estilizar as coisas rapidamente, o Tailwind é fantástico. Ele permite que você construa designs complexos sem escrever uma linha de CSS tradicional. É uma escolha moderna e muito produtiva para um projeto como o seu.
+
+Uma Opção Mais Robusta (Se seu objetivo é aprender e escalar no futuro):
+Next.js
+
+Por quê? O Next.js é um framework React poderoso que é excelente para performance. No entanto, para uma única landing page, ele é como usar uma Ferrari para ir à padaria da esquina. É um exagero técnico para o seu projeto atual, e a complexidade pode atrasá-lo. Escolha esta opção apenas se o seu objetivo secundário for aprender Next.js para projetos futuros.
+
+Opções a Serem EVITADAS para este projeto:
+Flask, Django, Rails, Sinatra: Estes são frameworks de back-end. Eles são feitos para construir a lógica do servidor de aplicações web complexas. Sua landing page não precisa disso. Usá-los seria como construir uma usina de energia para alimentar uma única lâmpada.
+
+React, VueJS (puros): Embora sejam ótimos, eles adicionam uma camada de complexidade de JavaScript que não é necessária para uma página de conteúdo como a sua, podendo prejudicar a velocidade de carregamento se não for bem otimizada.
+
+Conclusão e Recomendação Final
+Para o seu objetivo—lançar uma landing page de alta conversão de forma rápida e eficiente, aproveitando o briefing detalhado que criamos—o Caminho 1 é, sem dúvida, a melhor escolha.
+
+Use a ferramenta de IA do Replit e alimente-a com o nosso prompt completo.
+
+Se, por qualquer motivo, você decidir codificar manualmente, a escolha mais inteligente e profissional é usar o template HTML, CSS, JS (Auto Refresh). É leve, rápido e perfeitamente adequado para a tarefa.

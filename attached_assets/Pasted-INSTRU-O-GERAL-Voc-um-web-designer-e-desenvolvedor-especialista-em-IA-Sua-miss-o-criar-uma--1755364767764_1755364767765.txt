@@ -1,0 +1,45 @@
+INSTRUÇÃO GERAL:
+Você é um web designer e desenvolvedor especialista em IA. Sua missão é criar uma landing page de uma única página, moderna e de alta conversão para um livro digital chamado "Arca do Conhecimento". A página deve ser totalmente responsiva para desktop e mobile.
+CONCEITO E NARRATIVA:
+O público-alvo são advogados. A narrativa da página é a jornada da "Caixa de Pandora" (o caos e a ameaça da IA na advocacia) para a "Arca do Conhecimento" (a segurança e o poder que o livro oferece). O tom deve ser impactante, urgente, mas também inspirador, mostrando que existe uma solução clara.
+IDENTIDADE VISUAL E ESTILO:
+Estilo Geral: Minimalista, moderno, tecnológico e sofisticado. Use elementos gráficos de linhas geométricas abstratas para conectar as seções.
+Paleta de Cores Principal:
+Fundo principal: Preto (#000000 ou similar).
+Cor de Destaque (títulos, botões, links): Vermelho vibrante e de impacto (#FF0000 ou similar).
+Cor de Texto: Branco (#FFFFFF).
+Tipografia: Use uma fonte sans-serif moderna e de fácil leitura, como Montserrat, Roboto ou Inter. Crie uma forte hierarquia visual com tamanhos e pesos de fonte diferentes para títulos, subtítulos e corpo de texto.
+ESTRUTURA DA PÁGINA (SEÇÃO POR SEÇÃO):
+SEÇÃO 1: BLOCO DE ABERTURA (A PRIMEIRA IMPRESSÃO)
+Background: Use como fundo o vídeo curto de um farol moderno e geométrico em meio a uma tempestade violenta à noite. O farol deve emitir um poderoso feixe de luz vermelho.
+Título (Headline): A Caixa de Pandora da IA foi aberta na advocacia. (Texto em vermelho, grande e impactante).
+Subtítulo: No fundo dela, restou a esperança: um guia prático para você sobreviver à tempestade, dominar a tecnologia e se transformar em uma potência de alta performance. (Texto em branco).
+Botão (CTA): Crie um botão grande, em vermelho vibrante com texto em branco, com o texto: QUERO DOMINAR O FUTURO DA ADVOCACIA.
+SEÇÃO 2: A DOR (CONEXÃO COM A REALIDADE DO ADVOGADO)
+Título da Seção: O campo de batalha está lotado. Ficar parado é retroceder.
+Conteúdo: Apresente os itens a seguir como bullet points rápidos e impactantes, talvez com um pequeno ícone de "alerta" ou "x" vermelho ao lado de cada um.
+Pressão de um mercado com 1 advogado para cada 153 habitantes.
+Serviços comoditizados e honorários cada vez mais achatados.
+O próprio Judiciário já opera com mais de 140 projetos de IA e não vai esperar por você.
+O risco real de se tornar um "advogado analógico", obsoleto e irrelevante.
+SEÇÃO 3: A APRESENTAÇÃO DA SOLUÇÃO (A "ARCA")
+Título da Seção: Apresentando [Nome do Livro]: Sua Arca do Conhecimento na Era Digital.
+Visual: Destaque a imagem da capa do livro em um mock-up 3D.
+Conteúdo: Um parágrafo curto e direto em branco: "Este não é um livro acadêmico. É um manual de campo, uma caixa de ferramentas testada e validada, para você aplicar a IA na sua rotina de forma simples e imediata."
+SEÇÃO 4: O CONTEÚDO (O QUE TEM DENTRO DO BAÚ DO TESOURO)
+Título da Seção: O Arsenal que Você Irá Dominar:
+Conteúdo: Crie quatro colunas ou cartões com um ícone geométrico e minimalista no topo de cada um.
+Item 1: Ícone de Mapa. Título: O Mapa da Revolução. Texto: Entenda por que a IA é inevitável e como se posicionar estrategicamente.
+Item 2: Ícone de Caixa de Ferramentas. Título: Sua Caixa de Ferramentas. Texto: Domine na prática o Gemini, ChatGPT e outras ferramentas com prompts prontos para usar.
+Item 3: Ícone de Gráfico de Performance. Título: Performance Máxima. Texto: Aprenda a usar a IA para economizar horas, analisar processos e tomar decisões mais inteligentes.
+Item 4: Ícone de Escudo. Título: Escudo Ético. Texto: Proteja-se dos riscos de sigilo, alucinações e responsabilidade profissional.
+SEÇÃO 5: OS GUIAS DA JORNADA (APRESENTAÇÃO DOS AUTORES)
+Título da Seção: Criado por Advogados, para Advogados.
+Conteúdo: Crie uma seção com duas colunas. Em cada coluna, coloque a foto de um autor (Carlos e Paola) e uma breve descrição. Abaixo das duas colunas, adicione a frase de conexão: "Nós também estamos no campo de batalha e criamos o guia que gostaríamos de ter recebido."
+SEÇÃO 6: A OFERTA FINAL (O CONVITE PARA EMBARCAR)
+Título da Seção: O Futuro da Advocacia tem dois lados. Qual você escolhe?
+Conteúdo: Crie uma lista clara (bullet points com ícones de check ✔️) de tudo que a pessoa recebe na compra (Ex: Livro em PDF, Bônus de Prompts, Acesso a Grupo Exclusivo, etc.). Apresente o preço de forma clara, com destaque para uma oferta de lançamento.
+Botão (CTA Final): Crie um botão final, grande e vermelho, com o texto: SIM, QUERO GARANTIR MEU LUGAR NA ADVOCACIA DE ALTA PERFORMANCE.
+Detalhes Finais: Adicione uma pequena seção para Garantia de Satisfação e Perguntas Frequentes (FAQ) no final da página.
+OBJETIVO FINAL:
+A página deve fluir de forma lógica e persuasiva, começando com a urgência do problema (estilo preto e vermelho) e terminando com a clareza e segurança da solução (a "Arca"). Cada seção deve levar naturalmente à próxima, culminando na conversão.
