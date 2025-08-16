@@ -766,8 +766,8 @@ p {
   height: 100%;
 }
 
-.h-24{
-  height: 6rem;
+.h-32{
+  height: 8rem;
 }
 
 .h-8{
@@ -798,8 +798,8 @@ p {
   width: 100%;
 }
 
-.w-24{
-  width: 6rem;
+.w-32{
+  width: 8rem;
 }
 
 .w-8{
@@ -913,6 +913,11 @@ p {
 
 .to-red-700{
   --tw-gradient-to: #b91c1c;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover{
@@ -1107,12 +1112,12 @@ p {
 }
 
 @media (min-width: 768px){
-  .md\:h-32{
-    height: 8rem;
+  .md\:h-40{
+    height: 10rem;
   }
 
-  .md\:w-32{
-    width: 8rem;
+  .md\:w-40{
+    width: 10rem;
   }
 
   .md\:grid-cols-2{
