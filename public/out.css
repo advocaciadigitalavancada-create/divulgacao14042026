@@ -646,8 +646,8 @@ video {
   height: 24rem;
 }
 
-.h-52 {
-  height: 13rem;
+.h-48 {
+  height: 12rem;
 }
 
 .min-h-screen {
@@ -668,10 +668,6 @@ video {
 
 .w-80 {
   width: 20rem;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .max-w-7xl {
@@ -1130,7 +1126,9 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s ease;
-  transform: scale(1.1);
+  transform: scale(1.0);
+  width: 100%;
+  height: 100%;
 }
 
 .author-name {
