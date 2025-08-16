@@ -766,8 +766,8 @@ p {
   height: 100%;
 }
 
-.h-40{
-  height: 10rem;
+.h-36{
+  height: 9rem;
 }
 
 .h-8{
@@ -798,8 +798,8 @@ p {
   width: 100%;
 }
 
-.w-40{
-  width: 10rem;
+.w-48{
+  width: 12rem;
 }
 
 .w-8{
@@ -1093,13 +1093,13 @@ p {
 
 :root {
   --primary-bg: #1A1A1A;
-  --accent-red: #FF2B2B;
+  --accent-red: #FF0000;
   --text-white: #F7FAFC;
   --text-secondary: rgba(247, 250, 252, 0.8);
   --darker-bg: #0F0F0F;
   --lighter-bg: #2A2A2A;
   --card-bg: rgba(42, 42, 42, 0.4);
-  --border-subtle: rgba(255, 43, 43, 0.1);
+  --border-subtle: rgba(255, 0, 0, 0.1);
 }
 
 .hover\:opacity-100:hover{
@@ -1107,12 +1107,8 @@ p {
 }
 
 @media (min-width: 768px){
-  .md\:h-48{
-    height: 12rem;
-  }
-
-  .md\:w-48{
-    width: 12rem;
+  .md\:w-56{
+    width: 14rem;
   }
 
   .md\:grid-cols-2{
@@ -1137,6 +1133,10 @@ p {
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:h-42 {
+    height: 10.5rem;
   }
 }
 
