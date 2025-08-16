@@ -161,7 +161,7 @@
 
         <div class="lg:w-1/2">
           <p class="body-text text-2xl md:text-3xl font-light leading-relaxed mb-8">
-            Este não é um livro acadêmico. É um <span class="text-accent font-bold">manual de campo</span>, uma caixa de ferramentas testada e validada, para você aplicar a IA na sua rotina de forma simples e imediata.
+            Este não é um livro acadêmico. É um <span class="text-accent font-bold">manual de campo</span>, uma caixa de ferramentas testada e validada, para você aplicar a IA na sua rotina de forma <span style="color: var(--accent-red);">simples e imediata</span>.
           </p>
           <p class="body-text text-xl font-light leading-relaxed text-secondary">
             É o resultado direto da nossa jornada descobrindo e testando dezenas de ferramentas digitais. Fomos da advocacia analógica à descoberta da IA e compilamos tudo para que você possa fazer a mesma transição, mas em uma fração de tempo.
@@ -420,11 +420,11 @@
 
     // Controle do vídeo do farol
     const farolVideo = document.getElementById('farol-video');
-    
+
     farolVideo.addEventListener('mouseenter', function() {
       this.play();
     });
-    
+
     farolVideo.addEventListener('mouseleave', function() {
       this.pause();
       this.currentTime = 0; // Volta ao início
