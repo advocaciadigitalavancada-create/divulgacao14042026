@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="out.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>Arca do Conhecimento - Domine o Futuro da Advocacia</title>
 </head>
-<body class="bg-primary text-primary font-montserrat">
+<body class="bg-primary text-primary font-inter">
 
   <!-- SEÇÃO 1: BLOCO DE ABERTURA -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-bg">
@@ -24,24 +23,24 @@
     >
       <source src="./attached_assets/Firefly Extreme weather footage. A drone shot slowly circles a solitary, hyper-minimalist lighthouse (1)_1_1755367130970.mp4" type="video/mp4">
     </video>
-    
+
     <!-- Overlay escuro para melhor legibilidade -->
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-5"></div>
-    
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-5 hero-overlay"></div>
+
     <div class="lighthouse-beam"></div>
-    
-    <div class="relative z-10 max-w-7xl mx-auto px-8 text-center py-20">
+
+    <div class="relative z-10 max-w-7xl mx-auto px-8 text-center py-20 content-overlay">
       <!-- Imagem do Farol -->
-      <div class="mb-12">
+      <div class="mb-12 elegant-spacing">
         <img src="./farol-logo.jpg" 
              alt="Farol com luz vermelha" 
-             class="w-40 h-52 md:w-48 md:h-64 mx-auto rounded-2xl shadow-2xl object-cover border-2 border-accent opacity-90 hover:opacity-100 transition-opacity duration-500">
+             class="w-48 h-64 md:w-56 md:h-72 mx-auto hero-image opacity-90">
       </div>
-      
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-accent mb-8 leading-tight text-shadow">
+
+      <h1 class="section-title text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight text-shadow">
         A Caixa de Pandora da IA foi aberta na advocacia.
       </h1>
-      <p class="text-xl md:text-2xl lg:text-3xl text-secondary font-light mb-16 max-w-5xl mx-auto leading-relaxed">
+      <p class="body-text text-xl md:text-2xl lg:text-3xl font-light mb-16 max-w-5xl mx-auto leading-relaxed">
         No fundo da caixa, a esperança: um guia prático para você sobreviver à tempestade, dominar a tecnologia e se transformar em uma potência de alta performance.
       </p>
       <button class="btn-primary">
@@ -51,74 +50,66 @@
   </section>
 
   <!-- SEÇÃO 2: A DOR -->
-  <section class="py-32 section-bg-alternate">
+  <section class="section-bg-alternate">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-20 text-primary">
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-24">
         O campo de batalha está lotado. <span class="text-accent">Ficar parado é retroceder.</span>
       </h2>
 
-      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        <div class="card-elegant p-8">
-          <div class="flex items-start space-x-6">
-            <div class="flex-shrink-0">
-              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
-              </svg>
-            </div>
-            <p class="text-lg text-secondary leading-relaxed">Pressão de um mercado com 1 advogado para cada 153 habitantes.</p>
+      <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div class="card-elegant elegant-card-spacing">
+          <div class="flex items-center justify-center mb-8">
+            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
           </div>
+          <p class="body-text text-center text-xl leading-relaxed">O próprio Judiciário já opera com mais de 140 projetos de IA e não vai esperar por você.</p>
         </div>
 
-        <div class="card-elegant p-8">
-          <div class="flex items-start space-x-6">
-            <div class="flex-shrink-0">
-              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
-              </svg>
-            </div>
-            <p class="text-lg text-secondary leading-relaxed">Serviços comoditizados e honorários cada vez mais achatados.</p>
+        <div class="card-elegant elegant-card-spacing">
+          <div class="flex items-center justify-center mb-8">
+            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
           </div>
+          <p class="body-text text-center text-xl leading-relaxed">O risco real de se tornar um "advogado analógico", obsoleto e irrelevante.</p>
         </div>
 
-        <div class="card-elegant p-8">
-          <div class="flex items-start space-x-6">
-            <div class="flex-shrink-0">
-              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
-            </div>
-            <p class="text-lg text-secondary leading-relaxed">O próprio Judiciário já opera com mais de 140 projetos de IA e não vai esperar por você.</p>
+        <div class="card-elegant elegant-card-spacing">
+          <div class="flex items-center justify-center mb-8">
+            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+            </svg>
           </div>
+          <p class="body-text text-center text-xl leading-relaxed">Pressão de um mercado com 1 advogado para cada 153 habitantes.</p>
         </div>
 
-        <div class="card-elegant p-8">
-          <div class="flex items-start space-x-6">
-            <div class="flex-shrink-0">
-              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <p class="text-lg text-secondary leading-relaxed">O risco real de se tornar um "advogado analógico", obsoleto e irrelevante.</p>
+        <div class="card-elegant elegant-card-spacing">
+          <div class="flex items-center justify-center mb-8">
+            <svg class="icon-elegant" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+            </svg>
           </div>
+          <p class="body-text text-center text-xl leading-relaxed">Serviços comoditizados e honorários cada vez mais achatados.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SEÇÃO 3: APRESENTAÇÃO DA SOLUÇÃO -->
-  <section class="py-32 section-bg">
+  <section class="section-bg">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-20">
-        Apresentando <span class="text-accent">Arca do Conhecimento</span>: Sua Arca do Conhecimento na Era Digital.
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-24">
+        Apresentando <span class="text-accent">Arca do Conhecimento</span>: Sua Bússola Digital.
       </h2>
 
-      <div class="flex flex-col lg:flex-row items-center gap-16">
+      <div class="flex flex-col lg:flex-row items-center gap-20">
         <div class="lg:w-1/2">
           <div class="book-mockup">
-            <div class="w-80 h-96 book-cover mx-auto relative">
-              <div class="absolute inset-6 bg-primary rounded-lg flex items-center justify-center">
+            <div class="w-80 h-96 book-cover mx-auto relative custom-shadow">
+              <div class="absolute inset-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg flex items-center justify-center">
                 <div class="text-center">
-                  <div class="text-2xl font-black text-primary mb-4">ARCA DO</div>
+                  <div class="text-2xl font-black text-white mb-4">ARCA DO</div>
                   <div class="text-2xl font-black text-accent mb-4">CONHECIMENTO</div>
                   <div class="text-sm text-secondary font-medium">Guia prático para advocacia com IA</div>
                 </div>
@@ -128,7 +119,7 @@
         </div>
 
         <div class="lg:w-1/2">
-          <p class="text-2xl md:text-3xl text-secondary leading-relaxed font-light">
+          <p class="body-text text-2xl md:text-3xl font-light leading-relaxed">
             Este não é um livro acadêmico. É um <span class="text-accent font-bold">manual de campo</span>, uma caixa de ferramentas testada e validada, para você aplicar a IA na sua rotina de forma simples e imediata.
           </p>
         </div>
@@ -137,140 +128,140 @@
   </section>
 
   <!-- SEÇÃO 4: O CONTEÚDO -->
-  <section class="py-32 section-bg-alternate">
+  <section class="section-bg-alternate">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-24">
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-32">
         O <span class="text-accent">Arsenal</span> que Você Irá Dominar:
       </h2>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
         <!-- Item 1 -->
-        <div class="text-center card-elegant p-10">
+        <div class="text-center card-elegant elegant-card-spacing">
           <div class="icon-container">
-            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m-6 3l6-3"/>
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-accent mb-6">O Mapa da Revolução</h3>
-          <p class="text-secondary leading-relaxed">Entenda o cenário atual da IA no Direito e como se posicionar estrategicamente.</p>
+          <h3 class="section-subtitle text-xl font-bold mb-6">Fundamentos Éticos</h3>
+          <p class="body-text leading-relaxed">Como usar IA sem comprometer sigilo profissional ou responsabilidade ética.</p>
         </div>
 
         <!-- Item 2 -->
-        <div class="text-center card-elegant p-10">
+        <div class="text-center card-elegant elegant-card-spacing">
           <div class="icon-container">
-            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-accent mb-6">Ferramentas Essenciais</h3>
-          <p class="text-secondary leading-relaxed">Domine as 15 IAs mais poderosas para transformar sua prática jurídica.</p>
+          <h3 class="section-subtitle text-xl font-bold mb-6">Ferramentas Essenciais</h3>
+          <p class="body-text leading-relaxed">Seleção das melhores IAs para advocacia, com comparativo detalhado e casos de uso.</p>
         </div>
 
         <!-- Item 3 -->
-        <div class="text-center card-elegant p-10">
+        <div class="text-center card-elegant elegant-card-spacing">
           <div class="icon-container">
-            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-accent mb-6">Performance Máxima</h3>
-          <p class="text-secondary leading-relaxed">Aprenda a usar a IA para economizar horas, analisar processos e tomar decisões mais inteligentes.</p>
+          <h3 class="section-subtitle text-xl font-bold mb-6">Performance Máxima</h3>
+          <p class="body-text leading-relaxed">Aprenda a usar a IA para economizar horas, analisar processos e tomar decisões mais inteligentes.</p>
         </div>
 
         <!-- Item 4 -->
-        <div class="text-center card-elegant p-10">
+        <div class="text-center card-elegant elegant-card-spacing">
           <div class="icon-container">
-            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-accent mb-6">Escudo Ético</h3>
-          <p class="text-secondary leading-relaxed">Proteja-se dos riscos de sigilo, alucinações e responsabilidade profissional.</p>
+          <h3 class="section-subtitle text-xl font-bold mb-6">Escudo Ético</h3>
+          <p class="body-text leading-relaxed">Proteja-se dos riscos de sigilo, alucinações e responsabilidade profissional.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SEÇÃO 5: OS AUTORES -->
-  <section class="py-32 section-bg">
+  <section class="section-bg">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-20">
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-20">
         Criado por <span class="text-accent">Advogados</span>, para Advogados.
       </h2>
 
-      <div class="grid md:grid-cols-2 gap-16 mb-16">
+      <div class="grid md:grid-cols-2 gap-16 mb-20">
         <!-- Autor 1 -->
         <div class="text-center">
-          <div class="w-56 h-56 mx-auto mb-8 bg-gradient-to-br from-accent to-red-700 rounded-full flex items-center justify-center shadow-2xl">
-            <div class="w-52 h-52 bg-primary rounded-full flex items-center justify-center">
+          <div class="w-52 h-52 bg-gray-600 rounded-full mx-auto mb-8 flex items-center justify-center custom-shadow author-image">
+            <div class="w-48 h-48 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center">
               <span class="text-4xl font-black text-accent">Carlos</span>
             </div>
           </div>
-          <h3 class="text-2xl font-bold text-accent mb-6">Carlos</h3>
-          <p class="text-secondary leading-relaxed text-lg">Advogado especialista em tecnologia jurídica, pioneiro na implementação de IA em escritórios de advocacia.</p>
+          <h3 class="section-subtitle text-2xl font-bold mb-6">Carlos</h3>
+          <p class="body-text text-center text-lg max-w-md mx-auto">Advogado especialista em tecnologia jurídica, pioneiro na implementação de IA em escritórios de advocacia.</p>
         </div>
 
         <!-- Autor 2 -->
         <div class="text-center">
-          <div class="w-56 h-56 mx-auto mb-8 bg-gradient-to-br from-accent to-red-700 rounded-full flex items-center justify-center shadow-2xl">
-            <div class="w-52 h-52 bg-primary rounded-full flex items-center justify-center">
+          <div class="w-52 h-52 bg-gray-600 rounded-full mx-auto mb-8 flex items-center justify-center custom-shadow author-image">
+            <div class="w-48 h-48 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center">
               <span class="text-4xl font-black text-accent">Paola</span>
             </div>
           </div>
-          <h3 class="text-2xl font-bold text-accent mb-6">Paola</h3>
-          <p class="text-secondary leading-relaxed text-lg">Advogada e consultora em transformação digital, especialista em otimização de processos jurídicos com IA.</p>
+          <h3 class="section-subtitle text-2xl font-bold mb-6">Paola</h3>
+          <p class="body-text text-center text-lg max-w-md mx-auto">Advogada e consultora em transformação digital, especialista em otimização de processos jurídicos com IA.</p>
         </div>
       </div>
 
-      <p class="text-2xl md:text-3xl text-center text-secondary font-light">
+      <p class="body-text text-2xl md:text-3xl text-center font-light">
         Nós também estamos no campo de batalha e criamos o guia que <span class="text-accent font-bold">gostaríamos de ter recebido.</span>
       </p>
     </div>
   </section>
 
   <!-- SEÇÃO FINAL -->
-  <section class="py-32 section-bg-alternate">
+  <section class="section-bg-alternate">
     <div class="max-w-7xl mx-auto px-8">
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-24">
+      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-24">
         O Futuro da Advocacia tem dois lados. <span class="text-accent">Qual você escolhe?</span>
       </h2>
 
-      <div class="card-elegant p-16 mb-16 max-w-5xl mx-auto">
-        <h3 class="text-3xl font-bold text-center text-accent mb-16">O que você recebe:</h3>
+      <div class="card-elegant p-16 mb-20 max-w-5xl mx-auto">
+        <h3 class="section-subtitle text-3xl font-bold text-center mb-16">O que você recebe:</h3>
 
-        <div class="grid md:grid-cols-2 gap-8 mb-20">
-          <div class="flex items-center space-x-6">
-            <div class="text-accent text-2xl">✔️</div>
-            <p class="text-lg text-secondary leading-relaxed">Livro completo em PDF (100 páginas)</p>
+        <div class="grid md:grid-cols-2 gap-8 mb-24">
+          <div class="flex items-center space-x-6 elegant-spacing">
+            <div class="checkmark-icon">✓</div>
+            <p class="body-text text-lg leading-relaxed">Livro completo em PDF (100 páginas)</p>
           </div>
-          <div class="flex items-center space-x-6">
-            <div class="text-accent text-2xl">✔️</div>
-            <p class="text-lg text-secondary leading-relaxed">Biblioteca de Prompts prontos para usar</p>
+          <div class="flex items-center space-x-6 elegant-spacing">
+            <div class="checkmark-icon">✓</div>
+            <p class="body-text text-lg leading-relaxed">Biblioteca de Prompts prontos para usar</p>
           </div>
-          <div class="flex items-center space-x-6">
-            <div class="text-accent text-2xl">✔️</div>
-            <p class="text-lg text-secondary leading-relaxed">Acesso ao Grupo Exclusivo no WhatsApp</p>
+          <div class="flex items-center space-x-6 elegant-spacing">
+            <div class="checkmark-icon">✓</div>
+            <p class="body-text text-lg leading-relaxed">Acesso ao Grupo Exclusivo no WhatsApp</p>
           </div>
-          <div class="flex items-center space-x-6">
-            <div class="text-accent text-2xl">✔️</div>
-            <p class="text-lg text-secondary leading-relaxed">Templates de documentos otimizados</p>
+          <div class="flex items-center space-x-6 elegant-spacing">
+            <div class="checkmark-icon">✓</div>
+            <p class="body-text text-lg leading-relaxed">Templates de documentos otimizados</p>
           </div>
-          <div class="flex items-center space-x-6">
-            <div class="text-accent text-2xl">✔️</div>
-            <p class="text-lg text-secondary leading-relaxed">Guias de implementação</p>
+          <div class="flex items-center space-x-6 elegant-spacing">
+            <div class="checkmark-icon">✓</div>
+            <p class="body-text text-lg leading-relaxed">Guias de implementação</p>
           </div>
-          <div class="flex items-center space-x-6">
-            <div class="text-accent text-2xl">✔️</div>
-            <p class="text-lg text-secondary leading-relaxed">Atualizações gratuitas por 1 ano</p>
+          <div class="flex items-center space-x-6 elegant-spacing">
+            <div class="checkmark-icon">✓</div>
+            <p class="body-text text-lg leading-relaxed">Atualizações por 1 ano</p>
           </div>
         </div>
 
         <div class="text-center">
-          <div class="mb-12">
-            <span class="text-secondary text-2xl line-through">De R$ 199</span>
-            <span class="text-5xl font-black text-accent ml-8">Por apenas R$ 97</span>
+          <div class="mb-16">
+            <div class="text-secondary text-2xl line-through mb-4">De R$ 199</div>
+            <div class="price-highlight">Por apenas R$ 97</div>
           </div>
-          <p class="text-yellow-400 font-bold mb-16 text-xl">🔥 Oferta de Lançamento - Limitada!</p>
+          <p class="text-yellow-400 font-bold mb-20 text-xl">🔥 Oferta de Lançamento - Limitada!</p>
 
           <button class="btn-primary text-xl px-16 py-6">
             SIM, QUERO GARANTIR MEU LUGAR NA ADVOCACIA DE ALTA PERFORMANCE
@@ -281,29 +272,29 @@
   </section>
 
   <!-- GARANTIA E FAQ -->
-  <section class="py-32 section-bg">
+  <section class="section-bg">
     <div class="max-w-5xl mx-auto px-8">
       <div class="text-center mb-24">
-        <h3 class="text-3xl font-bold text-accent mb-8">Garantia de 7 dias</h3>
-        <p class="text-xl text-secondary leading-relaxed">Se não ficar satisfeito, devolvemos 100% do seu investimento.</p>
+        <h3 class="section-subtitle text-3xl font-bold mb-8">Garantia de 7 dias</h3>
+        <p class="body-text text-xl leading-relaxed">Se não ficar satisfeito, devolvemos 100% do seu investimento.</p>
       </div>
 
       <div class="space-y-8">
-        <h3 class="text-3xl font-bold text-center text-primary mb-16">Perguntas Frequentes</h3>
+        <h3 class="section-title text-3xl font-bold text-center mb-16">Perguntas Frequentes</h3>
 
         <div class="card-elegant p-10">
-          <h4 class="text-xl font-bold text-accent mb-6">O livro é adequado para iniciantes em IA?</h4>
-          <p class="text-secondary leading-relaxed text-lg">Sim! O conteúdo foi desenvolvido pensando em advogados que nunca usaram IA antes, com explicações claras e passo a passo.</p>
+          <h4 class="section-subtitle text-xl font-bold mb-6">O livro é adequado para iniciantes em IA?</h4>
+          <p class="body-text text-lg leading-relaxed">Sim! O conteúdo foi desenvolvido pensando em advogados que nunca usaram IA antes, com explicações claras e passo a passo.</p>
         </div>
 
         <div class="card-elegant p-10">
-          <h4 class="text-xl font-bold text-accent mb-6">Funciona para qualquer área do Direito?</h4>
-          <p class="text-secondary leading-relaxed text-lg">Absolutamente. As técnicas e ferramentas apresentadas são aplicáveis a todas as áreas jurídicas.</p>
+          <h4 class="section-subtitle text-xl font-bold mb-6">Funciona para qualquer área do Direito?</h4>
+          <p class="body-text text-lg leading-relaxed">Absolutamente. As técnicas e ferramentas apresentadas são aplicáveis a todas as áreas jurídicas.</p>
         </div>
 
         <div class="card-elegant p-10">
-          <h4 class="text-xl font-bold text-accent mb-6">Como recebo o material?</h4>
-          <p class="text-secondary leading-relaxed text-lg">Imediatamente após a confirmação do pagamento, você recebe por email todos os materiais e acesso ao grupo exclusivo.</p>
+          <h4 class="section-subtitle text-xl font-bold mb-6">Como recebo o material?</h4>
+          <p class="body-text text-lg leading-relaxed">Imediatamente após a confirmação do pagamento, você recebe por email todos os materiais e acesso ao grupo exclusivo.</p>
         </div>
       </div>
     </div>
