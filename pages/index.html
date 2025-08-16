@@ -58,11 +58,17 @@
     <div class="lighthouse-beam"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-8 text-center py-20 content-overlay">
-      <!-- Imagem do Farol -->
+      <!-- Vídeo do Farol -->
       <div class="mb-12 elegant-spacing">
-        <img src="./farol-logo.jpg" 
-             alt="Farol com luz vermelha" 
-             class="w-48 h-64 md:w-56 md:h-72 mx-auto hero-image opacity-90">
+        <video 
+          id="farol-video"
+          muted
+          playsinline
+          class="w-48 h-64 md:w-56 md:h-72 mx-auto hero-image opacity-90 cursor-pointer"
+          poster="./farol-logo.jpg"
+        >
+          <source src="./attached_assets/WhatsApp Video 2025-08-16 at 15.02.41_1755384360344.mp4" type="video/mp4">
+        </video>
       </div>
 
       <h1 class="section-title text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight text-shadow">
@@ -411,6 +417,18 @@
         document.getElementById("countdown").innerHTML = "ENCERRADO";
       }
     }, 1000);
+
+    // Controle do vídeo do farol
+    const farolVideo = document.getElementById('farol-video');
+    
+    farolVideo.addEventListener('mouseenter', function() {
+      this.play();
+    });
+    
+    farolVideo.addEventListener('mouseleave', function() {
+      this.pause();
+      this.currentTime = 0; // Volta ao início
+    });
   </script>
 
 </body>
