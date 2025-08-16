@@ -1083,11 +1083,21 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid var(--accent-red);
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+  transition: all 0.4s ease;
+  overflow: hidden;
 }
 
 .book-cover:hover {
-  transform: rotateY(-5deg) rotateX(5deg);
+  transform: rotateY(-5deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+}
+
+.book-cover img {
+  transition: transform 0.4s ease;
+}
+
+.book-cover:hover img {
+  transform: scale(1.1);
 }
 
 .text-shadow {
