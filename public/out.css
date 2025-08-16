@@ -575,8 +575,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(229, 62, 62, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(229, 62, 62, 0.08) 0%, transparent 70%);
   pointer-events: none;
+  z-index: 8;
 }
 
 .section-bg {
@@ -674,11 +675,22 @@ body {
   position: relative;
 }
 
+.inset-0{
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .inset-6{
   top: 1.5rem;
   right: 1.5rem;
   bottom: 1.5rem;
   left: 1.5rem;
+}
+
+.z-0{
+  z-index: 0;
 }
 
 .z-10{
@@ -730,6 +742,10 @@ body {
   display: grid;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .h-8{
   height: 2rem;
 }
@@ -752,6 +768,10 @@ body {
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .w-8{
@@ -842,12 +862,26 @@ body {
   border-top-width: 1px;
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-40{
+  --tw-bg-opacity: 0.4;
+}
+
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
 .to-red-700{
   --tw-gradient-to: #b91c1c;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-8{
@@ -965,6 +999,10 @@ body {
           text-decoration-line: line-through;
 }
 
+.opacity-30{
+  opacity: 0.3;
+}
+
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -972,7 +1010,11 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.z-5 {
+  z-index: 5;
 }
 
 .bg-primary {
