@@ -395,8 +395,8 @@
 
   <!-- Script do Countdown -->
   <script>
-    // Definir data final (7 dias a partir de agora)
-    const countdownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+    // Definir data final fixa: 22 de agosto de 2025, 23h59 (horário de Brasília)
+    const countdownDate = new Date('2025-08-22T23:59:59-03:00').getTime();
 
     const countdown = setInterval(function() {
       const now = new Date().getTime();
