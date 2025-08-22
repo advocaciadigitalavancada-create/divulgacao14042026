@@ -132,9 +132,13 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   position: relative;
   overflow: hidden;
+  z-index: 10;
+  min-height: 60px;
+  text-decoration: none;
 }
 
 .btn-primary::before {
