@@ -457,8 +457,15 @@
 
   <!-- Script do Countdown -->
   <script>
-    // Definir data final fixa: 22 de agosto de 2025, 23h59 (horário de Brasília)
-    const countdownDate = new Date('2025-08-22T23:59:59-03:00').getTime();
+    // Definir data final: próximo domingo à meia noite (horário de Brasília)
+    const now = new Date();
+    const today = new Date(now.getTime() + (-3 * 60 * 60 * 1000)); // Ajustar para horário de Brasília
+    const daysUntilSunday = (7 - today.getDay()) % 7; // 0 = domingo
+    const nextSunday = new Date(today);
+    nextSunday.setDate(today.getDate() + (daysUntilSunday === 0 ? 7 : daysUntilSunday)); // Se já for domingo, próximo domingo
+    nextSunday.setHours(23, 59, 59, 999); // Meia noite (23:59:59)
+    
+    const countdownDate = nextSunday.getTime();
 
     const countdown = setInterval(function() {
       const now = new Date().getTime();
@@ -500,9 +507,9 @@
         Resumo do Sumário: Seu Mapa para a Advocacia de Alta Performance
       </h2>
 
-      <div class="grid md:grid-cols-3 gap-16">
+      <div class="max-w-4xl mx-auto">
         <!-- PARTE I -->
-        <div class="card-elegant p-8">
+        <div class="card-elegant p-8 mb-8">
           <h3 class="section-subtitle text-2xl font-bold mb-6 text-accent">🗺️ PARTE I - A NOVA ERA DA ADVOCACIA</h3>
           <p class="body-text text-lg leading-relaxed mb-4">
             Aqui, você vai entender o cenário completo para se posicionar estrategicamente.
@@ -515,7 +522,7 @@
         </div>
 
         <!-- PARTE II -->
-        <div class="card-elegant p-8">
+        <div class="card-elegant p-8 mb-8">
           <h3 class="section-subtitle text-2xl font-bold mb-6 text-accent">🛠️ PARTE II - A CAIXA DE FERRAMENTAS DO ADVOGADO</h3>
           <p class="body-text text-lg leading-relaxed mb-4">
             Esta é a parte prática. Você vai dominar as ferramentas e a técnica para extrair resultados incríveis.
