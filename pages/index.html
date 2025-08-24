@@ -508,15 +508,14 @@
 
   <!-- Script do Countdown -->
   <script>
-    // Definir data final: próximo domingo à meia noite (horário de Brasília)
+    // Definir data final: meia-noite de hoje (00:00 de amanhã) (horário de Brasília)
     const now = new Date();
     const today = new Date(now.getTime() + (-3 * 60 * 60 * 1000)); // Ajustar para horário de Brasília
-    const daysUntilSunday = (7 - today.getDay()) % 7; // 0 = domingo
-    const nextSunday = new Date(today);
-    nextSunday.setDate(today.getDate() + (daysUntilSunday === 0 ? 7 : daysUntilSunday)); // Se já for domingo, próximo domingo
-    nextSunday.setHours(23, 59, 59, 999); // Meia noite (23:59:59)
+    const midnight = new Date(today);
+    midnight.setDate(today.getDate() + 1); // Próximo dia
+    midnight.setHours(0, 0, 0, 0); // Meia-noite (00:00:00)
     
-    const countdownDate = nextSunday.getTime();
+    const countdownDate = midnight.getTime();
 
     const countdown = setInterval(function() {
       const now = new Date().getTime();
