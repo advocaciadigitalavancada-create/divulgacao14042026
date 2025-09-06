@@ -3,6 +3,9 @@ const path = require("path")
 const express = require("express")
 const app = express()
 
+// Import database functions
+const { insertLead } = require('./server/storage')
+
 app.use(express.static(path.join(__dirname, "public/")))
 app.use(express.static(path.join(__dirname, "pages/")))
 app.use(express.static(path.join(__dirname, "attached_assets/")))
@@ -29,16 +32,22 @@ app.get("/masterclass", (req,res) => {
 
 app.use(express.json())
 
-app.post('/api/leads', (req, res) => {
+app.post('/api/leads', async (req, res) => {
   const { email, nome } = req.body;
   
   if (!email || !nome) {
     return res.status(400).json({ error: 'Email e nome são obrigatórios' });
   }
   
-  console.log('Nova inscrição:', { nome, email, timestamp: new Date() });
-  
-  res.json({ success: true, message: 'Inscrição realizada com sucesso!' });
+  try {
+    const newLead = await insertLead({ nome, email });
+    console.log('Nova inscrição salva no banco:', newLead);
+    
+    res.json({ success: true, message: 'Inscrição realizada com sucesso!' });
+  } catch (error) {
+    console.error('Erro ao salvar lead:', error);
+    res.status(500).json({ error: 'Erro interno do servidor' });
+  }
 });
 
 app.listen(5000, '0.0.0.0', () => {
