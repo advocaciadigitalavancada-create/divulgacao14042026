@@ -17,7 +17,14 @@ app.get("/", (req,res) => {
     return;
   }
 });
-  res.sendFile(path.join(__dirname, "pages/index.html"))
+  
+  // Adicionar cabeçalhos para evitar cache
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.set('Pragma', 'no-cache');
+  res.set('Expires', '0');
+  res.set('Surrogate-Control', 'no-store');
+  
+  res.sendFile(path.join(__dirname, "pages/masterclass.html"))
 })
 
 app.get("/masterclass", (req,res) => {
