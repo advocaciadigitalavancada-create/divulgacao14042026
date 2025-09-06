@@ -8,48 +8,59 @@
   <link rel="stylesheet" href="out.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>Masterclass Advocacia Exponencial - Crie Petições 12x mais Rápido</title>
-  <meta name="description" content="Advogada, descubra como usar Inteligência Artificial para criar petições trabalhistas em 15 minutos, e não mais em 3 horas.">
+  <title>Curso IA para Advogados Trabalhistas - Domine a Inteligência Artificial</title>
+  <meta name="description" content="Curso completo para advogados trabalhistas dominarem a Inteligência Artificial e criarem petições em 15 minutos.">
 </head>
 <body class="bg-gray-900 text-white font-inter">
 
-  <!-- SEÇÃO HERO -->
-  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-red-900 relative overflow-hidden">
-    <!-- Overlay com animação -->
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    
-    <!-- Elementos decorativos -->
-    <div class="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-    <div class="absolute bottom-20 right-10 w-32 h-32 bg-red-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-1000"></div>
-    
-    <div class="relative z-10 max-w-7xl mx-auto px-6 text-center py-20">
-      <!-- Data do evento -->
-      <div class="inline-flex items-center bg-red-600 text-white px-6 py-3 rounded-full text-lg font-bold mb-8 animate-bounce">
-        🗓️ Quinta-feira, 09 de Outubro de 2025 | ⏰ 20:00h (Horário de Brasília)
+  <!-- CONTADOR REGRESSIVO FIXO -->
+  <div class="fixed top-0 left-0 right-0 bg-red-600 text-white z-50 py-3">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-lg font-bold mb-2">🔥 ÚLTIMAS VAGAS - Inscrições encerram em:</p>
+      <div id="countdown" class="flex justify-center space-x-4">
+        <div class="text-center">
+          <span id="days" class="text-2xl font-black">14</span>
+          <div class="text-xs">DIAS</div>
+        </div>
+        <div class="text-center">
+          <span id="hours" class="text-2xl font-black">00</span>
+          <div class="text-xs">HORAS</div>
+        </div>
+        <div class="text-center">
+          <span id="minutes" class="text-2xl font-black">00</span>
+          <div class="text-xs">MIN</div>
+        </div>
+        <div class="text-center">
+          <span id="seconds" class="text-2xl font-black">00</span>
+          <div class="text-xs">SEG</div>
+        </div>
       </div>
-      
+    </div>
+  </div>
+
+  <!-- SEÇÃO HERO -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-red-900 relative overflow-hidden pt-32">
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-center py-20">
       <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight">
-        Sua Petição Trabalhista pronta em <span class="text-yellow-400">15 minutos</span>, não em 3 horas.
+        <span class="text-yellow-400">Domine a IA</span> como Advogado Trabalhista
       </h1>
       
-      <p class="text-xl md:text-2xl lg:text-3xl font-light mb-12 max-w-5xl mx-auto leading-relaxed text-gray-200">
-        Descubra na Masterclass online e 100% gratuita como usar a Inteligência Artificial para eliminar a sobrecarga, aumentar seu faturamento e transformar sua advocacia.
+      <p class="text-xl md:text-2xl lg:text-3xl font-light mb-12 max-w-4xl mx-auto leading-relaxed text-gray-200">
+        Curso completo para advogados trabalhistas criarem petições em <span class="text-yellow-400 font-bold">15 minutos</span> usando Inteligência Artificial
       </p>
       
       <!-- Formulário de inscrição -->
-      <div class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-2xl mb-8">
-        <h3 class="text-2xl font-bold text-gray-800 mb-6">Garante sua vaga GRATUITA agora!</h3>
+      <div class="max-w-md mx-auto bg-white p-8 rounded-2xl shadow-2xl mb-8">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Inscreva-se no Curso</h3>
         <form id="leadForm" class="space-y-4">
           <input 
             type="text" 
-            id="nome" 
             placeholder="Seu nome completo" 
             required
             class="w-full px-4 py-4 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none text-lg font-medium"
           >
           <input 
             type="email" 
-            id="email" 
             placeholder="Seu melhor e-mail" 
             required
             class="w-full px-4 py-4 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none text-lg font-medium"
@@ -58,166 +69,198 @@
             type="submit" 
             class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            QUERO GARANTIR MINHA VAGA GRATUITA
+            QUERO DOMINAR A IA
           </button>
         </form>
-        <p class="text-gray-600 text-sm mt-4">✅ Masterclass 100% gratuita | ✅ Certificado de participação | ✅ Bônus exclusivos</p>
       </div>
-      
-      <p class="text-lg text-gray-300">
-        ⚠️ <strong>Vagas limitadas</strong> - Últimas 48 horas para se inscrever
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTEÚDO DO CURSO -->
+  <section class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-black text-center mb-8 text-green-400">
+        O Mapa da sua Transformação
+      </h2>
+      <p class="text-xl text-center mb-16 text-gray-300 max-w-4xl mx-auto">
+        O curso é 100% prático e direto ao ponto, desenhado para que você aplique o conhecimento e veja os resultados na sua rotina o mais rápido possível.
       </p>
-    </div>
-  </section>
-
-  <!-- SEÇÃO DORES -->
-  <section class="py-20 bg-gray-800">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-black text-center mb-16 text-red-400">
-        Essa rotina parece familiar?
-      </h2>
       
-      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <div class="bg-gray-700 p-8 rounded-xl border-l-4 border-red-500">
-          <p class="text-xl leading-relaxed">
-            😰 Petições e mais petições se acumulando, transformando suas noites e finais de semana em horas de trabalho extra.
+      <!-- MÓDULOS DO CURSO -->
+      <div class="space-y-6 mb-16">
+        <div class="bg-gray-700 p-8 rounded-xl border border-green-500">
+          <h3 class="text-2xl font-bold mb-4 text-green-400">MÓDULO 1: Boas-vindas e Acesso à Comunidade</h3>
+          <p class="text-lg leading-relaxed">
+            Comece com o pé direito. Aqui você receberá o mapa do curso, definirá suas metas e terá acesso imediato à nossa comunidade exclusiva de advogados de vanguarda para fazer networking e tirar dúvidas.
           </p>
         </div>
         
-        <div class="bg-gray-700 p-8 rounded-xl border-l-4 border-red-500">
-          <p class="text-xl leading-relaxed">
-            ⏰ A ansiedade constante com prazos apertados e a pressão de clientes que exigem respostas rápidas.
+        <div class="bg-gray-700 p-8 rounded-xl border border-green-500">
+          <h3 class="text-2xl font-bold mb-4 text-green-400">MÓDULO 2: Fundamentos da IA para Advogados (Sem 'Tecniquês')</h3>
+          <p class="text-lg leading-relaxed">
+            Perca o medo da tecnologia de uma vez por todas. Você vai aprender os comandos essenciais, entender como 'pensar' em IA, e configurar suas ferramentas para garantir segurança e resultados de alta qualidade.
           </p>
         </div>
         
-        <div class="bg-gray-700 p-8 rounded-xl border-l-4 border-red-500">
-          <p class="text-xl leading-relaxed">
-            😱 O medo de usar novas tecnologias e 'fazer besteira', ou pior, o receio de ficar para trás e se tornar obsoleto(a) na advocacia.
+        <div class="bg-gray-700 p-8 rounded-xl border border-green-500">
+          <h3 class="text-2xl font-bold mb-4 text-green-400">MÓDULO 3: Atendimento e Honorários no Piloto Automático</h3>
+          <p class="text-lg leading-relaxed">
+            Descubra como usar a IA para criar scripts de atendimento, responder clientes com mais agilidade e elaborar propostas de honorários persuasivas em minutos. Mais profissionalismo, menos tempo gasto.
           </p>
         </div>
         
-        <div class="bg-gray-700 p-8 rounded-xl border-l-4 border-red-500">
-          <p class="text-xl leading-relaxed">
-            😤 A sensação frustrante de trabalhar sem parar, mas não ver seu faturamento e sua liberdade crescerem na mesma proporção.
+        <div class="bg-gray-700 p-8 rounded-xl border border-green-500">
+          <h3 class="text-2xl font-bold mb-4 text-green-400">MÓDULO 4: Rotina Blindada - retome o controle da sua agenda</h3>
+          <p class="text-lg leading-relaxed">
+            O caminho para a 'sexta-feira livre'. Aprenda a usar a IA para organizar suas tarefas, gerenciar seus prazos e automatizar e-mails, liberando horas preciosas do seu dia para focar no que é estratégico.
           </p>
+        </div>
+        
+        <div class="bg-gray-700 p-8 rounded-xl border border-yellow-400 relative">
+          <div class="absolute -top-3 left-6 bg-yellow-400 text-black px-4 py-1 rounded-full font-bold text-sm">
+            ⭐ MÓDULO PRINCIPAL
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-yellow-400">MÓDULO 5: A Fábrica de Petições - de 3 Horas para 15 Minutos</h3>
+          <p class="text-lg leading-relaxed">
+            O coração do método. Você terá acesso ao passo a passo detalhado para transformar um caso em uma petição inicial ou contestação robusta, bem fundamentada e coesa em tempo recorde. É aqui que o jogo vira.
+          </p>
+        </div>
+      </div>
+
+      <!-- BÔNUS -->
+      <div class="mb-16">
+        <h3 class="text-3xl font-bold text-center mb-12 text-blue-400">🎁 BÔNUS EXCLUSIVOS</h3>
+        
+        <div class="grid md:grid-cols-1 gap-6">
+          <div class="bg-blue-900 p-8 rounded-xl border border-blue-400">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <h4 class="text-xl font-bold text-blue-400">BÔNUS #1: IA para Marketing Jurídico - Atraia os Clientes Certos</h4>
+              <span class="text-green-400 font-bold">Valor: R$ 497,00</span>
+            </div>
+            <p class="text-lg leading-relaxed">
+              Sozinho, este bônus já valeria o investimento. Aprenda a usar a IA para criar conteúdo para redes sociais, escrever artigos e posicionar seu nome no mercado para atrair clientes de forma consistente.
+            </p>
+          </div>
+          
+          <div class="bg-blue-900 p-8 rounded-xl border border-blue-400">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <h4 class="text-xl font-bold text-blue-400">BÔNUS #2: Biblioteca de Prompts de Alta Conversão</h4>
+              <span class="text-green-400 font-bold">Valor incalculável</span>
+            </div>
+            <p class="text-lg leading-relaxed">
+              Receba acesso ao meu acervo pessoal de 'comandos mágicos' prontos para copiar e colar. São dezenas de prompts testados e validados para as mais diversas tarefas da advocacia trabalhista.
+            </p>
+          </div>
+          
+          <div class="bg-blue-900 p-8 rounded-xl border border-blue-400">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <h4 class="text-xl font-bold text-blue-400">BÔNUS #3: Comunidade 'Advogados Exponenciais'</h4>
+              <span class="text-green-400 font-bold">Valor: R$ 997,00/ano</span>
+            </div>
+            <p class="text-lg leading-relaxed">
+              Acesso por 1 ano à nossa comunidade fechada para networking, parcerias e suporte contínuo. Você nunca mais vai se sentir sozinho(a) na sua jornada.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESUMO DA OFERTA -->
+      <div class="bg-gradient-to-r from-green-800 to-blue-800 p-8 rounded-xl border border-green-400 mb-16">
+        <h3 class="text-3xl font-bold text-center mb-8 text-green-400">Sua Vaga no Advocacia Exponencial Inclui:</h3>
+        <ul class="space-y-4 text-lg max-w-3xl mx-auto">
+          <li class="flex items-center">
+            <span class="text-green-400 mr-3">✅</span>
+            Acesso vitalício aos 5 Módulos do Curso (Valor de R$ 1.997)
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-400 mr-3">✅</span>
+            Bônus #1: IA para Marketing Jurídico (Valor de R$ 497)
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-400 mr-3">✅</span>
+            Bônus #2: Biblioteca de Prompts (Incalculável)
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-400 mr-3">✅</span>
+            Bônus #3: 1 Ano de Comunidade (Valor de R$ 997)
+          </li>
+        </ul>
+        <p class="text-2xl font-bold text-center mt-8 text-yellow-400">
+          Tudo isso, hoje, por um valor especial de lançamento:
+        </p>
+      </div>
+
+      <!-- Botão de inscrição -->
+      <div class="text-center">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-2xl shadow-2xl">
+          <form id="leadFormBeneficios" class="space-y-4">
+            <input 
+              type="text" 
+              placeholder="Seu nome completo" 
+              required
+              class="w-full px-4 py-3 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-green-500 focus:outline-none text-lg font-medium"
+            >
+            <input 
+              type="email" 
+              placeholder="Seu melhor e-mail" 
+              required
+              class="w-full px-4 py-3 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-green-500 focus:outline-none text-lg font-medium"
+            >
+            <button 
+              type="submit" 
+              class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              QUERO O CURSO COMPLETO
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO PROMESSA -->
-  <section class="py-20 bg-gradient-to-r from-blue-900 to-purple-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-black text-center mb-16 text-yellow-400">
-        Imagine ter uma assistente genial trabalhando para você 24/7.
-      </h2>
-      
-      <div class="max-w-4xl mx-auto text-center space-y-8">
-        <p class="text-2xl md:text-3xl font-light leading-relaxed">
-          A Inteligência Artificial não é o futuro, é o presente. Para a advogada autônoma, ela não é uma ameaça, mas sim a <span class="text-yellow-400 font-bold">maior oportunidade da década</span>.
-        </p>
-        
-        <p class="text-xl md:text-2xl leading-relaxed text-gray-200">
-          Nesta Masterclass, você não vai aprender sobre tecnologia, você vai aprender a construir liberdade. Vou te mostrar o método prático que transforma a IA em sua estagiária mais eficiente para que você possa focar no que realmente importa: estratégias, clientes e sua vida fora do escritório.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO APRENDIZADOS -->
+  <!-- SEÇÃO BIO -->
   <section class="py-20 bg-gray-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-black text-center mb-16 text-green-400">
-        O que você vai descobrir na Masterclass:
-      </h2>
-      
-      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <div class="bg-gray-800 p-8 rounded-xl border border-green-500">
-          <h3 class="text-2xl font-bold mb-4 text-green-400">✨ O Fim da Página em Branco</h3>
-          <p class="text-lg leading-relaxed">
-            O comando exato (prompt) para a IA criar a estrutura de uma petição trabalhista robusta e bem fundamentada em menos de 5 minutos.
-          </p>
-        </div>
-        
-        <div class="bg-gray-800 p-8 rounded-xl border border-green-500">
-          <h3 class="text-2xl font-bold mb-4 text-green-400">🛡️ Advocacia à Prova de Erros</h3>
-          <p class="text-lg leading-relaxed">
-            Como usar a tecnologia para revisar suas próprias peças, encontrar falhas e fortalecer argumentos, reduzindo o medo de 'fazer besteira'.
-          </p>
-        </div>
-        
-        <div class="bg-gray-800 p-8 rounded-xl border border-green-500">
-          <h3 class="text-2xl font-bold mb-4 text-green-400">🚀 De Sobrecarga à Vanguarda</h3>
-          <p class="text-lg leading-relaxed">
-            O passo a passo para organizar seu fluxo de trabalho com IA, eliminar o acúmulo de iniciais e ser reconhecida como uma profissional inovadora.
-          </p>
-        </div>
-        
-        <div class="bg-gray-800 p-8 rounded-xl border border-green-500">
-          <h3 class="text-2xl font-bold mb-4 text-green-400">🏖️ O Caminho para a Sexta-Feira Livre</h3>
-          <p class="text-lg leading-relaxed">
-            Como a automação de tarefas repetitivas pode liberar dezenas de horas na sua semana, tornando a meta de não trabalhar às sextas uma realidade.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO HOST -->
-  <section class="py-20 bg-gray-800">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-4xl md:text-5xl font-black text-center mb-16">
         Seu instrutor: <span class="text-blue-400">Carlos Linzmeyer</span>
       </h2>
       
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-400">
+      <div class="text-center mb-16">
+        <div class="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-blue-400">
           <img src="compressedImage (1)_1755383249944.jpeg" alt="Carlos Linzmeyer" class="w-full h-full object-cover">
         </div>
         
-        <h3 class="text-3xl font-bold mb-4 text-blue-400">De Advogado sobrecarregado a Estrategista com IA.</h3>
+        <h3 class="text-2xl font-bold mb-6 text-blue-400">De Advogado sobrecarregado a Estrategista com IA.</h3>
         
-        <p class="text-xl leading-relaxed max-w-3xl mx-auto">
+        <p class="text-xl leading-relaxed max-w-3xl mx-auto mb-8">
           Eu também já senti na pele a pressão dos prazos e das petições acumuladas. Como advogado autônomo, percebi que ou eu encontrava uma forma de multiplicar minhas horas, ou seria engolido pelo mercado. Mergulhei no estudo da Inteligência Artificial e desenvolvi um método que não só salvou minha rotina, mas que me permitiu ter mais resultados com menos esforço. Agora, quero compartilhar esse mesmo método com você.
         </p>
       </div>
-    </div>
-  </section>
 
-  <!-- SEÇÃO CTA FINAL -->
-  <section class="py-20 bg-gradient-to-r from-red-900 to-yellow-900">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-4xl md:text-6xl font-black mb-8 text-yellow-400">
-        Sua vaga na advocacia do futuro está a um clique de distância.
-      </h2>
-      
-      <p class="text-xl md:text-2xl mb-12 text-gray-200 max-w-4xl mx-auto">
-        Não deixe o medo ou a falta de tempo te impedirem de alcançar o próximo nível. O evento é online e gratuito, mas as vagas são limitadas.
-      </p>
-      
-      <!-- Formulário de inscrição final -->
-      <div class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-2xl">
-        <h3 class="text-2xl font-bold text-gray-800 mb-6">Últimas vagas disponíveis!</h3>
-        <form id="leadFormFinal" class="space-y-4">
-          <input 
-            type="text" 
-            placeholder="Seu nome completo" 
-            required
-            class="w-full px-4 py-4 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-red-500 focus:outline-none text-lg font-medium"
-          >
-          <input 
-            type="email" 
-            placeholder="Seu melhor e-mail" 
-            required
-            class="w-full px-4 py-4 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-red-500 focus:outline-none text-lg font-medium"
-          >
-          <button 
-            type="submit" 
-            class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-lg animate-pulse"
-          >
-            QUERO TRANSFORMAR MINHA ADVOCACIA
-          </button>
-        </form>
+      <!-- Botão de inscrição -->
+      <div class="text-center">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-2xl shadow-2xl">
+          <form id="leadFormBio" class="space-y-4">
+            <input 
+              type="text" 
+              placeholder="Seu nome completo" 
+              required
+              class="w-full px-4 py-3 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none text-lg font-medium"
+            >
+            <input 
+              type="email" 
+              placeholder="Seu melhor e-mail" 
+              required
+              class="w-full px-4 py-3 text-gray-800 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none text-lg font-medium"
+            >
+            <button 
+              type="submit" 
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              QUERO APRENDER COM CARLOS
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -225,19 +268,43 @@
   <!-- FOOTER -->
   <footer class="py-12 bg-gray-900 border-t border-gray-700">
     <div class="max-w-7xl mx-auto px-6 text-center">
-      <p class="text-gray-400 mb-4">© 2025 Carlos Linzmeyer. Todos os direitos reservados.</p>
-      <div class="space-x-6">
-        <a href="/privacidade" class="text-gray-400 hover:text-white transition-colors">Política de Privacidade</a>
-        <a href="/termos" class="text-gray-400 hover:text-white transition-colors">Termos de Uso</a>
-      </div>
+      <p class="text-gray-400">© 2025 Carlos Linzmeyer. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <!-- JavaScript -->
   <script>
+    // Contador regressivo de 14 dias
+    function startCountdown() {
+      const countdownDate = new Date().getTime() + (14 * 24 * 60 * 60 * 1000); // 14 dias a partir de agora
+
+      const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+        document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("countdown").innerHTML = "INSCRIÇÕES ENCERRADAS";
+        }
+      }, 1000);
+    }
+
     // Função para capturar leads
     function setupLeadForm(formId) {
-      document.getElementById(formId).addEventListener('submit', async function(e) {
+      const form = document.getElementById(formId);
+      if (!form) return;
+      
+      form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         const nome = this.querySelector('input[type="text"]').value;
@@ -261,11 +328,10 @@
           
           if (result.success) {
             button.textContent = '✅ INSCRITO COM SUCESSO!';
-            button.className = button.className.replace('bg-red-600', 'bg-green-600');
+            button.className = button.className.replace('bg-red-600', 'bg-green-600').replace('bg-blue-600', 'bg-green-600').replace('bg-green-600', 'bg-green-600');
             
-            // Redirecionar para página de confirmação ou mostrar mensagem
             setTimeout(() => {
-              alert('Parabéns! Sua inscrição foi confirmada. Você receberá o link de acesso por e-mail.');
+              alert('Parabéns! Sua inscrição foi confirmada. Você receberá informações do curso por e-mail.');
             }, 1000);
           } else {
             throw new Error(result.error);
@@ -278,18 +344,12 @@
       });
     }
     
-    // Configurar ambos os formulários
-    setupLeadForm('leadForm');
-    setupLeadForm('leadFormFinal');
-    
-    // Efeitos visuais
+    // Inicializar
     document.addEventListener('DOMContentLoaded', function() {
-      // Animação de entrada suave
-      document.body.style.opacity = '0';
-      setTimeout(() => {
-        document.body.style.transition = 'opacity 1s';
-        document.body.style.opacity = '1';
-      }, 100);
+      startCountdown();
+      setupLeadForm('leadForm');
+      setupLeadForm('leadFormBeneficios');
+      setupLeadForm('leadFormBio');
     });
   </script>
 </body>

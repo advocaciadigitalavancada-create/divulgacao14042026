@@ -1,0 +1,76 @@
+# -*- coding: utf-8 -*-
+
+# Carlos, aqui está a sua ementa traduzida para uma linguagem focada em benefícios.
+# Use esta estrutura para apresentar o conteúdo do curso na sua página de vendas.
+# Isso mostra claramente o valor e a transformação que o aluno irá receber.
+
+curso_conteudo = {
+    "titulo_secao": "O Mapa da sua Transformação: O que você terá acesso no Advocacia Exponencial",
+    "descricao_secao": "O curso é 100% prático e direto ao ponto, desenhado para que você aplique o conhecimento e veja os resultados na sua rotina o mais rápido possível.",
+    
+    "modulos": [
+        {
+            "numero": "MÓDULO 1",
+            "titulo": "Boas-vindas e Acesso à Comunidade",
+            "descricao": "Comece com o pé direito. Aqui você receberá o mapa do curso, definirá suas metas e terá acesso imediato à nossa comunidade exclusiva de advogados de vanguarda para fazer networking e tirar dúvidas."
+        },
+        {
+            "numero": "MÓDULO 2",
+            "titulo": "Fundamentos da IA para Advogados (Sem 'Tecniquês')",
+            "descricao": "Perca o medo da tecnologia de uma vez por todas. Você vai aprender os comandos essenciais, entender como 'pensar' em IA, e configurar suas ferramentas para garantir segurança e resultados de alta qualidade."
+        },
+        {
+            "numero": "MÓDULO 3",
+            "titulo": "Atendimento e Honorários no Piloto Automático",
+            "descricao": "Descubra como usar a IA para criar scripts de atendimento, responder clientes com mais agilidade e elaborar propostas de honorários persuasivas em minutos. Mais profissionalismo, menos tempo gasto."
+        },
+        {
+            "numero": "MÓDULO 4",
+            "titulo": "Rotina Blindada: retome o controle da sua agenda",
+            "descricao": "O caminho para a 'sexta-feira livre'. Aprenda a usar a IA para organizar suas tarefas, gerenciar seus prazos e automatizar e-mails, liberando horas preciosas do seu dia para focar no que é estratégico."
+        },
+        {
+            "numero": "MÓDULO 5",
+            "titulo": "A Fábrica de Petições: de 3 Horas para 15 Minutos",
+            "descricao": "O coração do método. Você terá acesso ao passo a passo detalhado para transformar um caso em uma petição inicial ou contestação robusta, bem fundamentada e coesa em tempo recorde. É aqui que o jogo vira."
+        }
+    ],
+    
+    "bonus": [
+        {
+            "tag": "BÔNUS #1",
+            "titulo": "IA para Marketing Jurídico: Atraia os Clientes Certos",
+            "descricao": "Sozinho, este bônus já valeria o investimento. Aprenda a usar a IA para criar conteúdo para redes sociais, escrever artigos e posicionar seu nome no mercado para atrair clientes de forma consistente.",
+            "valor": "Vendido separadamente por R$ 497,00"
+        },
+        {
+            "tag": "BÔNUS #2",
+            "titulo": "Biblioteca de Prompts de Alta Conversão",
+            "descricao": "Receba acesso ao meu acervo pessoal de 'comandos mágicos' prontos para copiar e colar. São dezenas de prompts testados e validados para as mais diversas tarefas da advocacia trabalhista.",
+            "valor": "Valor incalculável"
+        },
+        {
+            "tag": "BÔNUS #3",
+            "titulo": "Comunidade 'Advogados Exponenciais'",
+            "descricao": "Acesso por 1 ano à nossa comunidade fechada para networking, parcerias e suporte contínuo. Você nunca mais vai se sentir sozinho(a) na sua jornada.",
+            "valor": "Vendido separadamente por R$ 997,00/ano"
+        }
+    ],
+
+    "resumo_oferta": {
+        "titulo": "Sua Vaga no Advocacia Exponencial Inclui:",
+        "itens": [
+            "Acesso vitalício aos 5 Módulos do Curso (Valor de R$ 1.997)",
+            "Bônus #1: IA para Marketing Jurídico (Valor de R$ 497)",
+            "Bônus #2: Biblioteca de Prompts (Incalculável)",
+            "Bônus #3: 1 Ano de Comunidade (Valor de R$ 997)"
+        ],
+        "chamada_para_preco": "Tudo isso, hoje, por um valor especial de lançamento:"
+    }
+}
+
+# Exemplo de como acessar os módulos para criar a lista no seu site
+# for modulo in curso_conteudo['modulos']:
+#     print(f"{modulo['numero']}: {modulo['titulo']}")
+#     print(modulo['descricao'])
+#     print("-" * 20)
