@@ -1,0 +1,77 @@
+# -*- coding: utf-8 -*-
+
+# Olá, Carlos!
+# Aqui está todo o conteúdo estratégico para sua página de captura de leads.
+# Use este dicionário para preencher os textos do seu site no Replit.
+# Exemplo de como usar em um template HTML (com Flask/Jinja2): <h1>{{ pagina_captura['hero']['titulo'] }}</h1>
+
+pagina_captura = {
+    "meta": {
+        "titulo_pagina": "Masterclass Advocacia Exponencial - Crie Petições 12x mais Rápido",
+        "descricao": "Advogada, descubra como usar Inteligência Artificial para criar petições trabalhistas em 15 minutos, e não mais em 3 horas."
+    },
+    "hero": {
+        "titulo": "Sua Petição Trabalhista pronta em 15 minutos, não em 3 horas.",
+        "subtitulo": "Descubra na Masterclass online e 100% gratuita como usar a Inteligência Artificial para eliminar a sobrecarga, aumentar seu faturamento e transformar sua advocacia.",
+        "info_evento": "🗓️ Quinta-feira, 09 de Outubro de 2025 | ⏰ 20:00h (Horário de Brasília)",
+        "cta_botao": "QUERO GARANTIR MINHA VAGA GRATUITA"
+    },
+    "dores": {
+        "titulo": "Essa rotina parece familiar?",
+        "lista_de_dores": [
+            "Petições e mais petições se acumulando, transformando suas noites e finais de semana em horas de trabalho extra.",
+            "A ansiedade constante com prazos apertados e a pressão de clientes que exigem respostas rápidas.",
+            "O medo de usar novas tecnologias e 'fazer besteira', ou pior, o receio de ficar para trás e se tornar obsoleto(a) na advocacia.",
+            "A sensação frustrante de trabalhar sem parar, mas não ver seu faturamento e sua liberdade crescerem na mesma proporção."
+        ]
+    },
+    "promessa": {
+        "titulo": "Imagine ter uma assistente genial trabalhando para você 24/7.",
+        "paragrafo_1": "A Inteligência Artificial não é o futuro, é o presente. Para a advogada autônoma, ela não é uma ameaça, mas sim a maior oportunidade da década.",
+        "paragrafo_2": "Nesta Masterclass, você não vai aprender sobre tecnologia, você vai aprender a construir liberdade. Vou te mostrar o método prático que transforma a IA em sua estagiária mais eficiente para que você possa focar no que realmente importa: estratégias, clientes e sua vida fora do escritório.",
+        "imagem_alt_text": "Imagem de uma advogada trabalhando de forma tranquila e eficiente com um notebook."
+    },
+    "aprendizado": {
+        "titulo": "O que você vai descobrir na Masterclass:",
+        "lista_de_aprendizados": [
+            {
+                "titulo": "O Fim da Página em Branco",
+                "descricao": "O comando exato (prompt) para a IA criar a estrutura de uma petição trabalhista robusta e bem fundamentada em menos de 5 minutos."
+            },
+            {
+                "titulo": "Advocacia à Prova de Erros",
+                "descricao": "Como usar a tecnologia para revisar suas próprias peças, encontrar falhas e fortalecer argumentos, reduzindo o medo de 'fazer besteira'."
+            },
+            {
+                "titulo": "De Sobrecarga à Vanguarda",
+                "descricao": "O passo a passo para organizar seu fluxo de trabalho com IA, eliminar o acúmulo de iniciais e ser reconhecida como uma profissional inovadora."
+            },
+            {
+                "titulo": "O Caminho para a Sexta-Feira Livre",
+                "descricao": "Como a automação de tarefas repetitivas pode liberar dezenas de horas na sua semana, tornando a meta de não trabalhar às sextas uma realidade."
+            }
+        ]
+    },
+    "host": {
+        "foto_url": "url_da_sua_foto_profissional.jpg",
+        "nome": "Carlos Linzmeyer",
+        "bio_titulo": "De Advogado sobrecarregado a Estrategista com IA.",
+        "bio_texto": "Eu também já senti na pele a pressão dos prazos e das petições acumuladas. Como advogado autônomo, percebi que ou eu encontrava uma forma de multiplicar minhas horas, ou seria engolido pelo mercado. Mergulhei no estudo da Inteligência Artificial e desenvolvi um método que não só salvou minha rotina, mas que me permitiu ter mais resultados com menos esforço. Agora, quero compartilhar esse mesmo método com você."
+    },
+    "cta_final": {
+        "titulo": "Sua vaga na advocacia do futuro está a um clique de distância.",
+        "subtitulo": "Não deixe o medo ou a falta de tempo te impedirem de alcançar o próximo nível. O evento é online e gratuito, mas as vagas são limitadas.",
+        "cta_botao": "QUERO TRANSFORMAR MINHA ADVOCACIA"
+    },
+    "footer": {
+        "copyright": "© 2025 Carlos Linzmeyer. Todos os direitos reservados.",
+        "links_uteis": [
+            {"texto": "Política de Privacidade", "url": "/privacidade"},
+            {"texto": "Termos de Uso", "url": "/termos"}
+        ]
+    }
+}
+
+# Exemplo de como acessar um item específico
+# print(pagina_captura['hero']['titulo'])
+# print(pagina_captura['aprendizado']['lista_de_aprendizados'][0]['titulo'])
