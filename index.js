@@ -23,7 +23,7 @@ app.get("/", (req,res) => {
   res.set('Expires', '0');
   res.set('Surrogate-Control', 'no-store');
   
-  res.sendFile(path.join(__dirname, "pages/masterclass.html"))
+  res.sendFile(path.join(__dirname, "pages/index.html"))
 })
 
 app.get("/masterclass", (req,res) => {
