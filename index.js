@@ -7,7 +7,6 @@ const app = express()
 const { insertLead } = require('./server/storage')
 
 app.use(express.static(path.join(__dirname, "public/")))
-app.use(express.static(path.join(__dirname, "pages/")))
 app.use(express.static(path.join(__dirname, "attached_assets/")))
 
 app.get("/", (req,res) => {
