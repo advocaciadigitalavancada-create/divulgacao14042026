@@ -2,12 +2,13 @@
 
 This is a legal tech marketing website that promotes an AI guide for lawyers. The project consists of two main pages: a landing page for an AI manual called "IA para Advogados: Manual de Campo" and a masterclass registration page for "Advocacia Exponencial". The website targets Brazilian lawyers and focuses on helping them leverage AI tools to improve their legal practice efficiency.
 
-## Recent Changes (September 2025)
-- **NEW**: Created a high-converting lead capture page for the "Masterclass Advocacia Exponencial" launch at `/masterclass`
+## Recent Changes (October 2025)
+- **NEW**: Updated homepage with workshop landing page template "O Jeito Certo de Usar IA na Advocacia"
+- **Phone Number Capture**: Added optional phone field to lead capture form for follow-up calls
+- **Database Enhancement**: Updated leads table schema to include telefone field (varchar 50, optional)
+- **Workshop Registration**: Created countdown timer for October 16, 2025 at 7:00 PM event
 - **Lead Capture System**: Implemented full database integration for lead storage with PostgreSQL
-- **Erico Rocha Style**: Designed the page following proven conversion optimization principles
-- **Database Schema**: Set up leads table to capture names, emails, and timestamps for the masterclass
-- **API Integration**: Added `/api/leads` endpoint for form submissions with proper validation
+- **API Integration**: Enhanced `/api/leads` endpoint to accept and store phone numbers with proper validation
 
 The site uses a modern, dark-themed design with red accents to create a professional and sophisticated appearance. It includes lead capture functionality through forms that collect user names and emails for marketing purposes.
 
