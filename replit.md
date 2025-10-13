@@ -3,13 +3,15 @@
 This is a legal tech marketing website that promotes an AI guide for lawyers. The project consists of two main pages: a landing page for an AI manual called "IA para Advogados: Manual de Campo" and a masterclass registration page for "Advocacia Exponencial". The website targets Brazilian lawyers and focuses on helping them leverage AI tools to improve their legal practice efficiency.
 
 ## Recent Changes (October 2025)
+- **Event Date Update (Oct 13)**: Changed workshop date from October 16 to October 29, 2025 at 7:00 PM
+- **Paola Photo Update (Oct 13)**: Replaced instructor photo with new image (foto paola_1760386234885.jpeg)
 - **Messaging Update (Oct 3)**: Removed all "grupo VIP" references; changed to "cadastrar WhatsApp para receber lembretes da live"
 - **Instructors Section (Oct 3)**: Added complete instructor bios for Carlos Linzmeyer, Paola Carelli, and Diego Sommer
 - **Testimonials (Oct 3)**: Added testimonials from Carlos Vailati and Claudinei (satisfied customers)
 - **Workshop Landing Page**: Homepage with template "O Jeito Certo de Usar IA na Advocacia"
 - **Phone Number Capture**: Added optional phone field to lead capture form for follow-up calls
 - **Database Enhancement**: Updated leads table schema to include telefone field (varchar 50, optional)
-- **Workshop Registration**: Created countdown timer for October 16, 2025 at 7:00 PM event
+- **Workshop Registration**: Created countdown timer with live countdown functionality
 - **Lead Capture System**: Implemented full database integration for lead storage with PostgreSQL
 - **API Integration**: Enhanced `/api/leads` endpoint to accept and store phone numbers with proper validation
 
