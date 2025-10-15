@@ -3,7 +3,7 @@ const path = require("path")
 const express = require("express")
 const app = express()
 
-const { insertLead } = require('./server/storage')
+const { insertLead, getAllLeads } = require('./server/storage')
 
 app.use(express.static(path.join(__dirname, "public/")))
 app.use(express.static(path.join(__dirname, "attached_assets/")))
@@ -40,7 +40,33 @@ app.get("/masterclass", (req,res) => {
   res.sendFile(path.join(__dirname, "pages/masterclass.html"))
 })
 
+app.get("/admin", (req,res) => {
+  exec('npx tailwindcss -i ./input.css -o ./public/out.css ', (err, stdout, stderr) => {
+  if (err) {
+    console.error('Tailwind build error:', err);
+    return;
+  }
+});
+  
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.set('Pragma', 'no-cache');
+  res.set('Expires', '0');
+  res.set('Surrogate-Control', 'no-store');
+  
+  res.sendFile(path.join(__dirname, "pages/admin.html"))
+})
+
 app.use(express.json())
+
+app.get('/api/leads', async (req, res) => {
+  try {
+    const leads = await getAllLeads();
+    res.json({ success: true, leads });
+  } catch (error) {
+    console.error('Erro ao buscar leads:', error);
+    res.status(500).json({ error: 'Erro interno do servidor' });
+  }
+});
 
 app.post('/api/leads', async (req, res) => {
   const { email, nome, telefone } = req.body;
