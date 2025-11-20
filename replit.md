@@ -2,10 +2,23 @@
 
 This is a legal tech marketing website that promotes an AI guide for lawyers. The project consists of two main pages: a landing page for an AI manual called "IA para Advogados: Manual de Campo" and a masterclass registration page for "Advocacia Exponencial". The website targets Brazilian lawyers and focuses on helping them leverage AI tools to improve their legal practice efficiency.
 
-## Recent Changes (October 2025)
+## Recent Changes (November 2025)
+- **New Landing Page (Nov 20)**: Completely replaced index.html with new "Oficina Prática de IA para Advocacia - OAB Joinville" design
+- **OAB Branding (Nov 20)**: Updated to include official OAB logo and Comissão de Direito Digital branding
+- **Event Date Update (Nov 20)**: Changed workshop dates to December 3-4, 2025 (two days, 19h)
+- **Project Cleanup (Nov 20)**: Removed ~35 unused files (videos, duplicate images, text/PDF files) from attached_assets/
+- **Image Organization (Nov 20)**: Moved active images to public/ directory with clean naming:
+  - logo-oab.png (OAB official logo)
+  - paola-carelli.jpeg (instructor photo)
+  - carlos-vailati.png (testimonial photo)
+  - carlos-linzmeyer.jpeg (instructor photo)
+- **File Structure Cleanup (Nov 20)**: Deleted obsolete images from public/ (old carlos/paola photos, unused logos)
+- **Backup Removal (Nov 20)**: Removed index-backup.html; kept masterclass.html for /masterclass route
+
+## Previous Changes (October 2025)
 - **Admin Panel (Oct 15)**: Created admin dashboard at `/admin` to view and export lead registrations with CSV export functionality (password: admin123)
 - **Event Date Update (Oct 13)**: Changed workshop date from October 16 to October 29, 2025 at 7:00 PM
-- **Paola Photo Update (Oct 13)**: Replaced instructor photo with new image (foto paola_1760386234885.jpeg)
+- **Paola Photo Update (Oct 13)**: Replaced instructor photo with new image
 - **Messaging Update (Oct 3)**: Removed all "grupo VIP" references; changed to "cadastrar WhatsApp para receber lembretes da live"
 - **Instructors Section (Oct 3)**: Added complete instructor bios for Carlos Linzmeyer, Paola Carelli, and Diego Sommer
 - **Testimonials (Oct 3)**: Added testimonials from Carlos Vailati and Claudinei (satisfied customers)
