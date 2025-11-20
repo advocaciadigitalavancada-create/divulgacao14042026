@@ -1,467 +1,465 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="out.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>Workshop Gratuito: O Jeito Certo de Usar I.A. na Advocacia</title>
-  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta http-equiv="expires" content="0">
-  <meta name="description" content="Cadastre seu WhatsApp e receba lembretes do workshop gratuito. Descubra o método para usar IA de forma segura e eficiente, criando petições em minutos e evitando os riscos que ninguém te conta.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Prática de IA para Advocacia - OAB Joinville</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Configuração de Identidade Visual OAB + Estilo High Conversion */
+        :root {
+            --oab-blue: #1B2240; /* Azul Profundo */
+            --oab-accent: #2E3459; /* Índigo Suave */
+            --oab-light: #F5F5F7; /* Off-white */
+            --highlight: #3B82F6; /* Azul Vibrante para destaque */
+            --alert: #EF4444; /* Vermelho para escassez/erro */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--oab-light);
+            color: #1A1A1A;
+            overflow-x: hidden;
+        }
+
+        /* Utilitários de Fundo e Texto */
+        .bg-oab-primary { background-color: var(--oab-blue); }
+        .text-oab-primary { color: var(--oab-blue); }
+        .bg-oab-accent { background-color: var(--oab-accent); }
+        .text-highlight { color: var(--highlight); }
+        
+        /* Estilo dos Cards "Elegantes" mesclados */
+        .card-elegant {
+            background: white;
+            border: 1px solid rgba(27, 34, 64, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .card-elegant:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--oab-blue);
+        }
+
+        /* Botão Pulsante */
+        .btn-primary {
+            background: linear-gradient(to right, #1B2240, #2E3459);
+            color: white;
+            font-weight: 800;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: transform 0.2s;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Urgency Banner - CORRIGIDO: Agora usa tons de azul e cinza escuro para sobriedade */
+        .urgency-banner {
+            background: #2E3459; /* Cor sólida OAB Accent para consistência */
+            color: white;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Countdown Boxes */
+        .countdown-item {
+            background: rgba(0, 0, 0, 0.2); /* Fundo escuro sutil */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            min-width: 70px;
+            backdrop-filter: blur(5px);
+        }
+        
+        /* Background Pattern */
+        .hero-pattern {
+            background-color: var(--oab-blue);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
 </head>
-<body class="bg-primary text-primary font-inter">
+<body class="flex flex-col min-h-screen">
 
-  <div class="urgency-banner">
-    <div class="max-w-7xl mx-auto px-8 py-2 text-center">
-      <p class="text-base font-bold text-white mb-2">
-        🔥 VAGAS LIMITADAS - O EVENTO ACONTECE EM:
-      </p>
-      <div id="countdown" class="countdown-timer">
-        <div class="countdown-item">
-          <span id="days" class="countdown-number">00</span>
-          <span class="countdown-label">DIAS</span>
-        </div>
-        <div class="countdown-item">
-          <span id="hours" class="countdown-number">00</span>
-          <span class="countdown-label">HORAS</span>
-        </div>
-        <div class="countdown-item">
-          <span id="minutes" class="countdown-number">00</span>
-          <span class="countdown-label">MIN</span>
-        </div>
-        <div class="countdown-item">
-          <span id="seconds" class="countdown-number">00</span>
-          <span class="countdown-label">SEG</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden section-bg">
-    <video 
-      autoplay 
-      muted 
-      loop 
-      playsinline
-      class="absolute inset-0 w-full h-full object-cover opacity-40 z-0"
-    >
-      <source src="Firefly Extreme weather footage. A drone shot slowly circles a solitary, hyper-minimalist lighthouse (1)_1_1755367130970.mp4" type="video/mp4">
-    </video>
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-5 hero-overlay"></div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-8 text-center py-12 content-overlay">
-      <h1 class="section-title text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight text-shadow">
-        Existe o Jeito <span class="text-red-500">Errado</span> e existe o Jeito <span class="text-accent">Certo</span> de Usar I.A. na Advocacia
-      </h1>
-
-      <p class="body-text text-xl md:text-2xl lg:text-3xl font-light mb-8 max-w-5xl mx-auto leading-relaxed">
-        Descubra como criar petições muito mais rápido e com segurança. <span class="text-accent font-bold">Cadastre seu WhatsApp</span> para receber lembretes da live e dominar o jeito certo.
-      </p>
-
-      <p class="text-2xl md:text-3xl font-bold text-white mb-16">
-        🗓️ Anote na agenda: Dia 29 de Outubro, às 19h.
-      </p>
-
-      <a href="#inscricao" class="btn-primary">
-        CADASTRAR MEU WHATSAPP
-      </a>
-    </div>
-  </section>
-
-  <section class="section-bg-alternate">
-    <div class="max-w-6xl mx-auto px-8">
-      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-12">
-        O Jeito <span class="text-red-500">Errado</span>: Os Riscos que Ninguém te Conta
-      </h2>
-      <p class="body-text text-center mb-16 max-w-3xl mx-auto">
-        Usar a Inteligência Artificial sem um método validado é como navegar em uma tempestade sem bússola. Você corre riscos que podem custar caro.
-      </p>
-
-             <div class="card-elegant border-red-500/50">
-          <h3 class="text-2xl font-bold text-red-500 mt-2 mb-4">Informações Erradas (Alucinações)</h3>
-          <p class="text-secondary mb-6">
-            As IAs podem "inventar" jurisprudências e artigos de lei. Confiar cegamente no resultado pode gerar <span class="text-accent font-bold">MULTAS PESADAS</span>.
-          </p>
-        </div>
-        <div class="card-elegant border-red-500/50">
-          <h3 class="text-2xl font-bold text-red-500 mt-2 mb-4">Perda de Tempo com Prompts Ruins</h3>
-          <p class="text-secondary mb-6">
-            Pedir da forma errada gera respostas genéricas e inúteis. Você gasta mais tempo corrigindo a I.A. do que levaria escrevendo do ZERO.
-          </p>
-        </div>
-        <div class="card-elegant border-red-500/50">
-          <h3 class="text-2xl font-bold text-red-500 mt-2 mb-4">Plágio e Falta de Autenticidade</h3>
-          <p class="text-secondary mb-6">
-            Produzir textos sem a sua "voz" e sem análise crítica resulta em peças vergonhosamente robóticas.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-bg">
-    <div class="max-w-6xl mx-auto px-8">
-      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-12">
-        O Jeito <span class="text-accent">Certo</span>: A Advocacia Exponencial
-      </h2>
-      <p class="body-text text-center mb-16 max-w-3xl mx-auto">
-        Com um método validado, a I.A. se transforma na sua assistente, permitindo que você produza em MINUTOS o que antes levava horas.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-        <div class="card-elegant border-accent/50">
-          <h3 class="text-2xl font-bold text-accent mt-2 mb-4">Economia Brutal de Tempo</h3>
-          <p class="text-secondary mb-6">
-            Crie a MINUTAS ROBUSTAS de petições, em POUCOS MINUTOS. É o fim das petições que se arrastam por horas.
-          </p>
-        </div>
-        <div class="card-elegant border-accent/50">
-          <h3 class="text-2xl font-bold text-accent mt-2 mb-4">Fundamentação Jurídica Robusta</h3>
-          <p class="text-secondary mb-6">
-            Use a IA como sua assistente de pesquisa para identificar informações, comparar com as alegações e encontrar fragilidades. 
-          </p>
-        </div>
-        <div class="card-elegant border-accent/50">
-          <h3 class="text-2xl font-bold text-accent mt-2 mb-4">Respostas Rápidas e Clientes Felizes</h3>
-          <p class="text-secondary mb-6">
-            Elabore pareceres, resuma atendimentos e responda dúvidas de clientes de forma estruturada e ágil, aumentando a percepção de valor do seu serviço.
-          </p>
-        </div>
-        <div class="card-elegant border-accent/50">
-          <h3 class="text-2xl font-bold text-accent mt-2 mb-4">Inovação e Destaque no Mercado</h3>
-          <p class="text-secondary mb-6">
-            Enquanto a concorrência patina, você domina a ferramenta mais poderosa da década, se posicionando como um advogado de vanguarda e atendendo as expectativas dos seus clientes.
-          </p>
-        </div>
-      </div>
-      <div class="text-center">
-        <a href="#inscricao" class="btn-primary">
-            QUERO APRENDER O JEITO CERTO
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO DEPOIMENTOS -->
-  <section class="section-bg">
-    <div class="max-w-7xl mx-auto px-8">
-      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-20">
-        Veja o que advogados como você estão <span class="text-accent">dizendo</span>
-      </h2>
-      
-      <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto mb-20">
-        <!-- Depoimento Carlos Vailati -->
-        <div class="author-card text-center min-h-[400px] flex flex-col">
-          <div class="w-32 h-32 mx-auto mb-8 flex items-center justify-center custom-shadow author-image overflow-hidden rounded-full">
-            <img src="foto carlos vailati_1757253750923.png" alt="Carlos Vailati" class="w-full h-full object-cover">
-          </div>
-          
-          <div class="author-bio flex-grow text-left">
-            <div class="text-accent text-4xl mb-4 text-center">"</div>
-            <p class="text-lg md:text-xl leading-relaxed mb-6 text-center">
-              Fui um dos primeiros a ter contato com o método, tanto no curso presencial quanto na edição pioneira do livro e posso afirmar: funciona. A transformação na rotina é real. Petições que me deixavam preocupado e travavam meu dia, hoje fluem e levam minutos. Técnicas que colocam qualquer advogado trabalhista em outro patamar de produtividade.
-            </p>
-            <div class="text-center">
-              <div class="author-name text-lg font-bold mb-2">Carlos Vailati</div>
-              <div class="text-secondary text-sm">
-                Advogado Trabalhista • Professor Universitário<br>
-                Conselheiro OAB Joinville • Pós-graduado em Direito Processual Civil
-              </div>
+    <!-- Faixa de Urgência: Corrigida para Azul -->
+    <div class="urgency-banner sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+            <div class="flex items-center gap-2">
+                <!-- Ícone em amarelo/amber para manter o sentido de alerta sem ser agressivo -->
+                <i data-lucide="clock" class="w-5 h-5 text-yellow-400 animate-pulse"></i>
+                <span class="font-bold text-sm md:text-base tracking-wide text-blue-50">VAGAS LIMITADAS - OFICINA NOS DIAS 03 E 04/12</span>
             </div>
-          </div>
-        </div>
-
-        <!-- Depoimento Claudinei -->
-        <div class="author-card text-center min-h-[400px] flex flex-col">
-          <div class="w-32 h-32 mx-auto mb-8 flex items-center justify-center custom-shadow author-image overflow-hidden rounded-full">
-            <img src="Gemini_Generated_Image_jz1bsxjz1bsxjz1b_1757272776425.png" alt="Claudinei" class="w-full h-full object-cover">
-          </div>
-          
-          <div class="author-bio flex-grow text-left">
-            <div class="text-accent text-4xl mb-4 text-center">"</div>
-            <p class="text-lg md:text-xl leading-relaxed mb-4 text-center">
-              Trabalho há mais de 15 anos em Gestão de Pessoas e sei que a lentidão na produção de documentos jurídicos é o maior gargalo entre o advogado e a agilidade as empresas exigem. O método que o Carlos ensina é um divisor de águas porque resolve exatamente isso.
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed mb-4 text-center">
-              Acompanho os cursos há um ano e a transformação na forma de pensar é nítida: aprendemos a entregar, em minutos, o que o mundo corporativo quer 'pra ontem', mantendo ou aumentando a qualidade técnica.
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed mb-6 text-center">
-              O método é eficaz, aprendi muito, uso todos os dias e hoje tenho o orgulho de poder orientar os colegas nos grupos de discussão. No final, não é só sobre I.A., é sobre eficiência, e o mercado valoriza.
-            </p>
-            <div class="text-center">
-              <div class="author-name text-lg font-bold mb-2">Claudinei Ferreira</div>
-              <div class="text-secondary text-sm">
-                Especialista em Gestão de Pessoas • 15+ anos de experiência<br>
-                Mentor em grupos de discussão sobre I.A. jurídica
-              </div>
+            <div id="countdown" class="flex gap-2 text-center text-xs font-bold">
+                <div class="countdown-item">
+                    <span id="days" class="block text-lg md:text-xl text-white">00</span>
+                    <span class="text-blue-200">DIAS</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="block text-lg md:text-xl text-white">00</span>
+                    <span class="text-blue-200">HORAS</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="block text-lg md:text-xl text-white">00</span>
+                    <span class="text-blue-200">MIN</span>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- SEÇÃO AUTORES -->
-  <section class="section-bg">
-    <div class="max-w-7xl mx-auto px-8">
-      <h2 class="section-title text-4xl md:text-6xl font-black text-center mb-20">
-        Criado por <span class="text-accent">Advogados</span>, para Advogados.
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-16 max-w-7xl mx-auto mb-20">
-        <!-- Carlos -->
-        <div class="author-card text-center min-h-[800px] flex flex-col">
-          <div class="w-48 h-48 mx-auto mb-8 flex items-center justify-center custom-shadow author-image overflow-hidden rounded-full">
-            <img src="compressedImage (1)_1755383249944.jpeg" 
-                 alt="Carlos Eduardo Virmond Vieira Linzmeyer" 
-                 class="w-full h-full object-cover"
-                 style="transform: scale(1.35);"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-accent font-bold text-lg\'>Carlos Eduardo<br>Virmond Vieira<br>Linzmeyer</span>'">
-          </div>
-
-          <h3 class="author-name mb-6">Carlos Eduardo<br>Virmond Vieira Linzmeyer</h3>
-
-          <div class="flex justify-center mb-8">
-            <a href="https://instagram.com/carloslinzmeyer" target="_blank" class="instagram-link">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-              <span class="ml-2">@carloslinzmeyer</span>
+    <!-- Header com Logo OAB -->
+    <nav class="bg-white border-b border-gray-200 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <!-- Logo OAB -->
+                <img src="logo oab azul.jpg" alt="OAB Logo" class="h-12 md:h-16 object-contain">
+                <div class="hidden md:block h-10 w-px bg-gray-300"></div>
+                <div class="hidden md:flex flex-col">
+                    <span class="text-oab-primary font-bold text-lg leading-tight">Comissão de Direito Digital</span>
+                    <span class="text-gray-500 text-xs uppercase tracking-widest">Subseção Joinville</span>
+                </div>
+            </div>
+            <a href="#inscricao" class="hidden md:inline-block text-oab-primary font-semibold hover:text-blue-600 transition">
+                Inscrever-se agora
             </a>
-          </div>
-
-          <div class="author-bio flex-grow text-left">
-            <div class="space-y-4">
-              <p class="leading-relaxed">
-                Com uma jornada que começou organizando arquivos de papel e evoluiu para a liderança de equipes digitais, Carlos viveu na prática a profunda transformação da advocacia.
-              </p>
-              <p class="leading-relaxed">
-                <strong>Advogado atuante desde 2012</strong>, especialista em Direito do Trabalho e Processo do Trabalho pela PUC-PR, foi Conselheiro da OAB/SC (gestão 2019-2021) e membro de comissões na OAB Joinville.
-              </p>
-              <p class="leading-relaxed">
-                Entusiasta da tecnologia, ministra palestras sobre ferramentas digitais e I.A. desde 2019. Ao se deparar com a revolução da I.A. generativa, encontrou sua missão: <span class="text-accent font-bold">criar o curso que gostaria de ter recebido</span> para traduzir essa revolução em performance e resultados para seus colegas.
-              </p>
-            </div>
-          </div>
         </div>
+    </nav>
 
-        <!-- Paola -->
-        <div class="author-card text-center min-h-[800px] flex flex-col">
-          <div class="w-48 h-48 mx-auto mb-8 flex items-center justify-center custom-shadow author-image overflow-hidden rounded-full">
-            <img src="foto paola_1760386234885.jpeg" 
-                 alt="Paola Carelli" 
-                 class="w-full h-full object-cover"
-                 style="transform: scale(1.35);"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-accent font-bold text-lg text-center\'>Paola<br>Carelli</span>'">
-          </div>
-
-          <h3 class="author-name mb-6">Paola Carelli</h3>
-
-          <div class="flex justify-center mb-8">
-            <a href="https://instagram.com/pa_carelli" target="_blank" class="instagram-link">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-              <span class="ml-2">@pa_carelli</span>
-            </a>
-          </div>
-
-          <div class="author-bio flex-grow text-left">
-            <div class="space-y-4">
-              <p class="leading-relaxed">
-                <strong>Advogada, professora universitária, mestre em direito e faixa preta em judo e em jiu jitsu</strong>, Paola traz uma perspectiva única sobre disciplina, estratégia e excelência.
-              </p>
-              <p class="leading-relaxed">
-                Sua experiência acadêmica combinada com a prática jurídica oferece insights valiosos sobre como a tecnologia pode ser aplicada de forma ética e eficiente na advocacia.
-              </p>
-              <p class="leading-relaxed">
-                Especialista em metodologias de ensino e implementação de processos, contribui com a visão pedagógica necessária para transformar conhecimento complexo em aplicação prática.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Diego Sommer -->
-        <div class="author-card text-center min-h-[800px] flex flex-col">
-          <div class="w-48 h-48 mx-auto mb-8 flex items-center justify-center custom-shadow author-image overflow-hidden rounded-full">
-            <img src="foto bio sommer_1757261949173.png" 
-                 alt="Diego Sommer" 
-                 class="w-full h-full object-cover"
-                 style="transform: scale(1.35);"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-accent font-bold text-lg text-center\'>Diego<br>Sommer</span>'">
-          </div>
-
-          <h3 class="author-name mb-6">Diego Sommer</h3>
-
-          <div class="flex justify-center mb-8">
-            <a href="https://instagram.com/diego.osommer" target="_blank" class="instagram-link">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-              <span class="ml-2">@ia.todo.dia</span>
-            </a>
-          </div>
-
-          <div class="author-bio flex-grow text-left">
-            <div class="space-y-4">
-              <p class="leading-relaxed">
-                No complexo universo da IA, Diego Sommer atua como o tradutor oficial. À frente do "IA Todo Dia", um dos maiores podcasts do Brasil sobre o tema, ele usa sua experiência em comunicação tecnológica para transformar o 'tecniquês' em insights práticos e impulsionar a adoção da tecnologia.
-              </p>
-              <p class="leading-relaxed">
-                Sua autoridade vai além do microfone: com uma perspectiva interdisciplinar que une tecnologia, gestão e impacto social, sua expertise abrange desde a criação de soluções de IA até a liderança no debate ético sobre seu uso prático no Brasil.
-              </p>
-              <p class="leading-relaxed">
-                Com uma didática leve e visão estratégica, Diego prepara os advogados para o futuro. No curso, ele ensina não apenas a usar a IA, mas a pensar com ela, posicionando os profissionais na vanguarda de uma advocacia mais eficiente e inovadora.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p class="body-text text-2xl md:text-3xl text-center font-light">
-        Nós também estamos no campo de batalha e criamos o curso que gostaríamos de ter recebido.
-      </p>
-    </div>
-  </section>
-
-  <section id="inscricao" class="section-bg py-20">
-    <div class="max-w-4xl mx-auto px-8 text-center">
-        <h2 class="section-title text-4xl md:text-5xl font-black text-center mb-8">
-            Sua vaga na advocacia do futuro está a <span class="text-accent">um clique</span> de distância.
-        </h2>
-        <p class="body-text text-xl md:text-2xl font-light mb-12 max-w-4xl mx-auto leading-relaxed">
-            Não deixe o medo ou a falta de tempo te impedirem de alcançar o próximo nível. O evento é online e gratuito. Cadastre seu WhatsApp para receber lembretes da live pelos nossos instrutores.
-        </p>
-
-        <div class="max-w-md mx-auto bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-accent/30 shadow-xl">
-          <h3 class="text-2xl font-bold text-white mb-6">Garantir Minha Vaga</h3>
-          
-          <form id="leadForm" class="space-y-4">
-            <div>
-              <input 
-                type="text" 
-                id="nome" 
-                name="nome" 
-                placeholder="Seu nome completo" 
-                required
-                class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
-              >
-            </div>
-            
-            <div>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="Seu melhor e-mail" 
-                required
-                class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
-              >
-            </div>
-
-            <div>
-              <input 
-                type="tel" 
-                id="telefone" 
-                name="telefone" 
-                placeholder="WhatsApp" 
-                class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
-              >
-            </div>
-            
-            <button 
-              type="submit" 
-              class="w-full btn-primary"
-            >
-              CADASTRAR MEU WHATSAPP
-            </button>
-          </form>
-
-          <div id="successMessage" class="hidden mt-6 p-4 bg-green-500/20 border border-green-500 rounded-lg">
-            <p class="text-green-400 font-semibold">✅ Inscrição confirmada! Em breve entraremos em contato.</p>
-          </div>
-
-          <div id="errorMessage" class="hidden mt-6 p-4 bg-red-500/20 border border-red-500 rounded-lg">
-            <p class="text-red-400 font-semibold">❌ Erro ao processar inscrição. Tente novamente.</p>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <footer class="py-12 bg-gray-900 border-t border-gray-700">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <p class="text-gray-400">© 2025 Carlos Linzmeyer. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script>
-    function startCountdown() {
-      const countdownDate = new Date("2025-10-29T19:00:00").getTime();
-
-      const timer = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-        document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-        document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-        document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-        if (distance < 0) {
-          clearInterval(timer);
-          document.getElementById("countdown").innerHTML = "EVENTO ENCERRADO";
-        }
-      }, 1000);
-    }
-
-    document.getElementById('leadForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      
-      const nome = document.getElementById('nome').value;
-      const email = document.getElementById('email').value;
-      const telefone = document.getElementById('telefone').value;
-      
-      const successMsg = document.getElementById('successMessage');
-      const errorMsg = document.getElementById('errorMessage');
-      
-      successMsg.classList.add('hidden');
-      errorMsg.classList.add('hidden');
-      
-      try {
-        const response = await fetch('/api/leads', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ nome, email, telefone })
-        });
+    <!-- Hero Section: Estilo "High Conversion" com Identidade OAB -->
+    <header class="hero-pattern relative text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#1B2240]"></div>
         
-        const data = await response.json();
-        
-        if (response.ok) {
-          successMsg.classList.remove('hidden');
-          document.getElementById('leadForm').reset();
-        } else {
-          errorMsg.classList.remove('hidden');
-        }
-      } catch (error) {
-        console.error('Erro:', error);
-        errorMsg.classList.remove('hidden');
-      }
-    });
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-block bg-blue-500/20 border border-blue-400/30 rounded-full px-4 py-1 mb-8 backdrop-blur-sm">
+                <span class="text-blue-200 font-semibold text-sm tracking-wider uppercase">Oficina 100% Prática e Presencial: leve seu notebook</span>
+            </div>
 
-    document.addEventListener('DOMContentLoaded', function() {
-      startCountdown();
-    });
-  </script>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight">
+                Existe o Jeito <span class="text-red-400 underline decoration-4 decoration-red-500/50">Errado</span> e o Jeito <span class="text-blue-400 underline decoration-4 decoration-blue-500/50">Estratégico</span> de Usar I.A. na Advocacia
+            </h1>
+
+            <p class="text-xl md:text-2xl font-light text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Domine a Inteligência Artificial Generativa para criar peças em minutos, analisar contratos complexos e eliminar o trabalho braçal.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4 items-center">
+                <a href="#inscricao" class="btn-primary bg-white text-oab-primary hover:bg-gray-100 border-2 border-transparent hover:border-white/50 text-lg px-8 py-5 w-full md:w-auto justify-center">
+                    VOU DOMINAR A I.A.
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <div class="flex flex-col text-left text-sm text-gray-300 font-medium bg-white/10 p-3 rounded-lg border border-white/10">
+                    <span><i data-lucide="calendar" class="inline w-4 h-4 mr-1"></i> 03 e 04 de Dezembro - 19h</span>
+                    <span><i data-lucide="map-pin" class="inline w-4 h-4 mr-1"></i> OAB Joinville - Bairro Saguaçu</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção: O Jeito Errado vs Certo (Problem/Solution) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Não corra riscos desnecessários</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Usar o ChatGPT sem técnica não é apenas ineficiente, é perigoso para sua reputação jurídica.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <!-- Risco 1 -->
+                <div class="card-elegant border-l-4 border-l-red-500">
+                    <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="alert-triangle" class="text-red-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-600 mb-3">Alucinações Jurídicas</h3>
+                    <p class="text-gray-600">IAs podem inventar jurisprudência. Sem a engenharia de prompt correta e validação, você coloca seu processo em risco de sofrer <strong class="text-red-600 font-black">MULTAS PESADAS</strong>.</p>
+                </div>
+                <!-- Risco 2 -->
+                <div class="card-elegant border-l-4 border-l-red-500">
+                    <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="clock" class="text-red-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-600 mb-3">Perda de Tempo</h3>
+                    <p class="text-gray-600">Ficar "conversando" com a IA sem saber pedir gera resultados genéricos que levam mais tempo para corrigir do que fazer do zero.</p>
+                </div>
+                <!-- Risco 3 -->
+                <div class="card-elegant border-l-4 border-l-red-500">
+                    <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="lock" class="text-red-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-red-600 mb-3">Quebra de Sigilo</h3>
+                    <p class="text-gray-600">Inserir dados de clientes em plataformas públicas sem tratamento adequado fere a LGPD e o sigilo profissional.</p>
+                </div>
+            </div>
+
+            <!-- A Solução -->
+            <div class="bg-oab-primary rounded-3xl p-8 md:p-16 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+                    <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FFFFFF" d="M45.7,-70.5C58.9,-62.5,69.3,-49.4,75.9,-34.7C82.5,-20,85.4,-3.7,82.4,11.1C79.4,25.9,70.5,39.2,59.6,50.3C48.7,61.4,35.8,70.3,21.6,74.8C7.4,79.3,-8.1,79.4,-22.4,74.7C-36.7,70,-49.8,60.5,-60.3,48.3C-70.8,36.1,-78.7,21.2,-80.3,5.4C-81.9,-10.4,-77.2,-27.1,-67.6,-40.4C-58,-53.7,-43.5,-63.6,-29.1,-70.9C-14.7,-78.2,0.4,-82.9,14.8,-79.8C29.2,-76.7,43.9,-66,45.7,-70.5Z" transform="translate(100 100)" />
+                    </svg>
+                </div>
+                
+                <div class="relative z-10 text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">O Jeito Certo: A Advocacia Exponencial</h2>
+                    <p class="text-lg text-blue-100 mb-8">
+                        Com o método que ensinaremos, a IA se torna sua "Legal Ops" pessoal. Aprenda a criar prompts estruturados, usar agentes personalizados e automatizar o que é repetitivo.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="text-green-400 w-6 h-6 mt-1"></i>
+                            <span>Elaboração de minutas robustas (iniciais, contestações) em minutos.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="text-green-400 w-6 h-6 mt-1"></i>
+                            <span>Análise e resumo de contratos e documentos extensos.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="text-green-400 w-6 h-6 mt-1"></i>
+                            <span>Pesquisa jurídica preliminar e checklists processuais.</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="text-green-400 w-6 h-6 mt-1"></i>
+                            <span>Uso ético e proteção de dados (LGPD) na prática.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ementa / Conteúdo (Dados do PDF) -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-oab-primary">O que você vai aprender</h2>
+                <p class="text-gray-500 mt-2">6 Horas de Conteúdo Prático ("Mão na Massa")</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Dia 03/12 -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 flex flex-col md:flex-row gap-6 hover:shadow-md transition">
+                    <div class="bg-blue-100 text-oab-primary font-bold rounded-lg w-full md:w-32 h-auto flex flex-col items-center justify-center py-4 md:py-0">
+                        <span class="text-xs uppercase">Dia</span>
+                        <span class="text-2xl font-black">03</span>
+                        <span class="text-xs uppercase">Dez - 19h</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Fundamentos e Engenharia de Prompts</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Boas-vindas e alinhamento de expectativas.</li>
+                            <li><strong>Prompt Eficaz:</strong> Estrutura, Contexto, Persona, Limites.</li>
+                            <li>Exposição das ferramentas: JusIA, Gemini, Claude.</li>
+                            <li><strong>Prática:</strong> Utilização de ferramentas, análise de documentos, pesquisa segura de informações e elaboração de pareceres.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dia 04/12 -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 flex flex-col md:flex-row gap-6 hover:shadow-md transition">
+                    <div class="bg-blue-100 text-oab-primary font-bold rounded-lg w-full md:w-32 h-auto flex flex-col items-center justify-center py-4 md:py-0">
+                        <span class="text-xs uppercase">Dia</span>
+                        <span class="text-2xl font-black">04</span>
+                        <span class="text-xs uppercase">Dez - 19h</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Ferramentas Avançadas e Agentes</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Ferramentas: TurboScribe, Mermaid, Perplexity, NotebookLM.</li>
+                            <li><strong>Prática:</strong> Elaboração de minutas jurídicas, criação de gráficos, automação de processos, cláusulas do contrato de honorários.</li>
+                            <li>Programação de agentes personalizados e automação.</li>
+                            <li>Dicas de segurança, ética e aplicação da LGPD.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requisitos -->
+            <div class="mt-12 bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg flex items-start gap-4">
+                <i data-lucide="laptop" class="text-yellow-600 w-6 h-6 mt-1"></i>
+                <div>
+                    <h4 class="font-bold text-yellow-800">Requisitos para Participação</h4>
+                    <p class="text-yellow-700 text-sm mt-1">
+                        É necessário levar <strong>Notebook pessoal</strong> e ter uma conta Google (Gmail). O curso é prático e você utilizará seu computador durante todo o tempo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social (Vailati) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-oab-primary mb-12">Quem já aplicou o método:</h2>
+            
+            <div class="relative bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-100 shadow-lg">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                    <div class="w-16 h-16 bg-oab-primary text-white flex items-center justify-center rounded-full text-4xl font-serif">"</div>
+                </div>
+                
+                <p class="text-xl italic text-gray-700 mb-8 mt-4 leading-relaxed">
+                    Fui um dos primeiros a ter contato com o método... e posso afirmar: funciona. A transformação na rotina é real. Petições que me deixavam preocupado e travavam meu dia, hoje fluem e levam minutos. Técnicas que colocam qualquer advogado em outro patamar.
+                </p>
+
+                <div class="flex items-center justify-center gap-4">
+                    <!-- Placeholder Foto Vailati -->
+                    <div class="w-16 h-16 rounded-full bg-gray-300 overflow-hidden">
+                         <img src="foto carlos vailati_1757253750923.png" alt="Carlos Vailati" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=CV'">
+                    </div>
+                    <div class="text-left">
+                        <div class="font-bold text-gray-900">Carlos Vailati</div>
+                        <div class="text-sm text-oab-primary">Conselheiro OAB Joinville • Advogado Trabalhista</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Palestrantes -->
+    <section class="py-20 bg-oab-primary text-white relative overflow-hidden">
+        <!-- Pattern Background Overlay -->
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">Quem irá guiar você</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Paola -->
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex flex-col items-center shrink-0 mx-auto md:mx-0">
+                        <div class="w-40 h-40 rounded-full border-4 border-blue-400 overflow-hidden shadow-xl mb-4">
+                            <img src="foto paola_1760386234885.jpeg" alt="Paola Carelli" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=Paola'">
+                        </div>
+                        <a href="https://instagram.com/pa_carelli" target="_blank" class="flex items-center gap-2 text-blue-200 hover:text-white transition text-sm font-medium bg-blue-900/30 px-3 py-1 rounded-full">
+                            <i data-lucide="instagram" class="w-4 h-4"></i> @pa_carelli
+                        </a>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-white mb-2">Paola Carelli</h3>
+                        <span class="inline-block bg-blue-600 text-xs font-bold px-2 py-1 rounded mb-3">OAB/SC 58.640</span>
+                        
+                        <div class="text-blue-100 text-sm leading-relaxed space-y-3">
+                            <p>
+                                <strong>Advogada, professora universitária, mestre em direito e faixa preta em judo e em jiu jitsu</strong>, Paola traz uma perspectiva única sobre disciplina, estratégia e excelência.
+                            </p>
+                            <p>
+                                Sua experiência acadêmica combinada com a prática jurídica oferece insights valiosos sobre como a tecnologia pode ser aplicada de forma ética e eficiente na advocacia.
+                            </p>
+                            <p>
+                                Especialista em metodologias de ensino e implementação de processos, contribui com a visão pedagógica necessária para transformar conhecimento complexo em aplicação prática.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carlos -->
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex flex-col items-center shrink-0 mx-auto md:mx-0">
+                        <div class="w-40 h-40 rounded-full border-4 border-blue-400 overflow-hidden shadow-xl mb-4">
+                            <img src="compressedImage (1)_1755383249944.jpeg" alt="Carlos Linzmeyer" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=Carlos'">
+                        </div>
+                        <a href="https://instagram.com/carloslinzmeyer" target="_blank" class="flex items-center gap-2 text-blue-200 hover:text-white transition text-sm font-medium bg-blue-900/30 px-3 py-1 rounded-full">
+                            <i data-lucide="instagram" class="w-4 h-4"></i> @carloslinzmeyer
+                        </a>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-white mb-2">Carlos Linzmeyer</h3>
+                        <span class="inline-block bg-blue-600 text-xs font-bold px-2 py-1 rounded mb-3">OAB/SC 35.951</span>
+                        
+                        <div class="text-blue-100 text-sm leading-relaxed space-y-3">
+                            <p>
+                                Com uma jornada que começou organizando arquivos de papel e evoluiu para a liderança de equipes digitais, Carlos viveu na prática a profunda transformação da advocacia.
+                            </p>
+                            <p>
+                                <strong>Advogado atuante desde 2012</strong>, especialista em Direito do Trabalho e Processo do Trabalho pela PUC-PR, foi Conselheiro da OAB/SC (gestão 2019-2021) e membro de comissões na OAB Joinville.
+                            </p>
+                            <p>
+                                Entusiasta da tecnologia, ministra palestras sobre ferramentas digitais e I.A. desde 2019. Ao se deparar com a revolução da I.A. generativa, encontrou sua missão: <span class="text-white font-bold">criar o curso que gostaria de ter recebido</span> para traduzir essa revolução em performance e resultados para seus colegas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Investimento -->
+    <section id="inscricao" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gray-50 border border-gray-200 rounded-3xl p-8 md:p-12 shadow-xl text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Garanta sua Vaga</h2>
+                <p class="text-gray-600 mb-8">
+                    As vagas são limitadas para garantir a qualidade da mentoria prática individual.
+                </p>
+
+                <div class="flex flex-col md:flex-row justify-center gap-6 mb-10">
+                    <!-- Preço Geral -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm w-full md:w-1/2">
+                        <div class="text-gray-500 text-sm uppercase tracking-wide font-bold mb-2">Público Geral</div>
+                        <div class="text-4xl font-black text-gray-800">R$ 350</div>
+                        <div class="text-xs text-gray-400 mt-1">Pagamento único</div>
+                    </div>
+                    <!-- Preço Advogado -->
+                    <div class="bg-oab-primary text-white p-6 rounded-xl border border-oab-primary shadow-lg w-full md:w-1/2 transform scale-105 ring-4 ring-blue-100">
+                        <div class="text-blue-200 text-sm uppercase tracking-wide font-bold mb-2">Advogados (20% OFF)</div>
+                        <div class="text-4xl font-black">R$ 280</div>
+                        <div class="text-xs text-blue-200 mt-1">Valor exclusivo com desconto</div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <a href="https://oabjoinville.org.br" class="btn-primary w-full justify-center text-xl py-6">
+                        FAZER INSCRIÇÃO AGORA
+                    </a>
+                    <p class="text-xs text-gray-400">
+                        *Ao clicar, você será redirecionado para o site da OAB Joinville para finalizar o pagamento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>&copy; 2025 OAB Joinville - Comissão de Direito Digital. Todos os direitos reservados.</p>
+            <p class="text-xs mt-2">Rua Amazonas, nº 46 - Bairro Saguaçu, Joinville/SC - Sala das Comissões</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Countdown Script (Data: 03/12/2025 - 19:00)
+        function startCountdown() {
+            const countdownDate = new Date("2025-12-03T19:00:00").getTime();
+
+            const timer = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+                document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById("countdown").innerHTML = "<span class='text-white font-bold px-2'>INSCRIÇÕES ENCERRADAS</span>";
+                }
+            }, 1000);
+        }
+        startCountdown();
+    </script>
 </body>
 </html>
