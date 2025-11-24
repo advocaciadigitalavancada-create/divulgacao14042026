@@ -1,5 +1,6 @@
 { pkgs }: {
 	deps = [
+   pkgs.imagemagick
 		pkgs.nodejs-16_x
         pkgs.nodePackages.typescript-language-server
         pkgs.yarn
