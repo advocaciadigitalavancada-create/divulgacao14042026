@@ -1,6 +1,7 @@
 const { drizzle } = require('drizzle-orm/postgres-js');
 const postgres = require('postgres');
 const { pgTable, serial, varchar, timestamp } = require('drizzle-orm/pg-core');
+const { desc } = require('drizzle-orm');
 
 // Define schema directly in JS
 const leads = pgTable('leads', {
@@ -17,7 +18,25 @@ const client = postgres(connectionString, {
 });
 const db = drizzle(client);
 
-const { desc } = require('drizzle-orm');
+// Função para garantir que a tabela existe (Auto-migração simples)
+async function ensureTablesExist() {
+  try {
+    console.log('Verificando/Criando tabelas no banco de dados...');
+    // Comando SQL direto para criar a tabela se não existir
+    await client`
+      CREATE TABLE IF NOT EXISTS leads (
+        id SERIAL PRIMARY KEY,
+        nome VARCHAR(255) NOT NULL,
+        email VARCHAR(255) NOT NULL,
+        telefone VARCHAR(50),
+        created_at TIMESTAMP DEFAULT NOW() NOT NULL
+      );
+    `;
+    console.log('Estrutura de banco de dados verificada com sucesso!');
+  } catch (error) {
+    console.error('Erro ao verificar/criar tabelas:', error);
+  }
+}
 
 async function insertLead(lead) {
   const result = await db.insert(leads).values(lead).returning();
@@ -31,5 +50,6 @@ async function getAllLeads() {
 module.exports = {
   insertLead,
   getAllLeads,
+  ensureTablesExist,
   db
 };

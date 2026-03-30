@@ -2,10 +2,12 @@ const path = require("path")
 const express = require("express")
 const app = express()
 
-// Movemos o processamento de JSON para o topo para garantir que todas as rotas funcionem
 app.use(express.json())
 
-const { insertLead, getAllLeads } = require('./server/storage')
+const { insertLead, getAllLeads, ensureTablesExist } = require('./server/storage')
+
+// Garante que as tabelas existam no banco de dados do Render assim que o servidor ligar
+ensureTablesExist();
 
 app.use(express.static(path.join(__dirname, "public/")))
 app.use(express.static(path.join(__dirname, "attached_assets/")))

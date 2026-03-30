@@ -3,6 +3,6 @@ export default {
   out: "./drizzle",
   dialect: "postgresql",
   dbCredentials: {
-    url: process.env.DATABASE_URL,
+    url: "postgresql://neondb_owner:npg_6NbclInUK9it@ep-flat-water-a5v6aq9m-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require",
   },
 };
