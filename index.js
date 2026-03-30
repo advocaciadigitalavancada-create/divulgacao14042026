@@ -22,6 +22,12 @@ app.get("/admin", (req,res) => {
 app.use(express.json())
 
 app.get('/api/leads', async (req, res) => {
+  const { password } = req.query;
+  
+  if (password !== '9886') {
+    return res.status(401).json({ error: 'Acesso não autorizado' });
+  }
+
   try {
     const leads = await getAllLeads();
     res.json({ success: true, leads });

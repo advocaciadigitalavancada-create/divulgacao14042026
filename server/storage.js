@@ -17,13 +17,15 @@ const client = postgres(connectionString, {
 });
 const db = drizzle(client);
 
+const { desc } = require('drizzle-orm');
+
 async function insertLead(lead) {
   const result = await db.insert(leads).values(lead).returning();
   return result[0];
 }
 
 async function getAllLeads() {
-  return await db.select().from(leads);
+  return await db.select().from(leads).orderBy(desc(leads.created_at));
 }
 
 module.exports = {
