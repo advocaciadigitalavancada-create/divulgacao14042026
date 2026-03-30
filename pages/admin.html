@@ -96,11 +96,11 @@
                     `).join('');
                     lucide.createIcons();
                 } else {
-                    alert('Sua sessão expirou. Por favor, recarregue a página.');
+                    alert('Erro no Servidor: ' + (data.error || 'Erro desconhecido'));
                 }
             } catch (error) {
                 console.error('Erro ao carregar leads:', error);
-                alert('Erro ao buscar dados do servidor.');
+                alert('Não foi possível conectar ao servidor. O banco de dados está ativado?');
             }
         }
     </script>

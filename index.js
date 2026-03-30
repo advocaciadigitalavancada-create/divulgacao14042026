@@ -2,6 +2,9 @@ const path = require("path")
 const express = require("express")
 const app = express()
 
+// Movemos o processamento de JSON para o topo para garantir que todas as rotas funcionem
+app.use(express.json())
+
 const { insertLead, getAllLeads } = require('./server/storage')
 
 app.use(express.static(path.join(__dirname, "public/")))
@@ -19,13 +22,11 @@ app.get("/admin", (req,res) => {
   res.sendFile(path.join(__dirname, "pages/admin.html"))
 })
 
-app.use(express.json())
-
 app.get('/api/leads', async (req, res) => {
   const { password } = req.query;
   
   if (password !== '9886') {
-    return res.status(401).json({ error: 'Acesso não autorizado' });
+    return res.status(401).json({ success: false, error: 'Senha incorreta no servidor' });
   }
 
   try {
@@ -33,7 +34,7 @@ app.get('/api/leads', async (req, res) => {
     res.json({ success: true, leads });
   } catch (error) {
     console.error('Erro ao buscar leads:', error);
-    res.status(500).json({ error: 'Erro interno do servidor' });
+    res.status(500).json({ success: false, error: 'Erro interno do servidor' });
   }
 });
 
