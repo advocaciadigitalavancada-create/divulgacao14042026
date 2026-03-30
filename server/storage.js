@@ -12,7 +12,9 @@ const leads = pgTable('leads', {
 });
 
 const connectionString = process.env.DATABASE_URL;
-const client = postgres(connectionString);
+const client = postgres(connectionString, {
+  ssl: connectionString && !connectionString.includes('localhost') ? 'require' : false
+});
 const db = drizzle(client);
 
 async function insertLead(lead) {

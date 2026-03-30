@@ -1,4 +1,3 @@
-const { exec } = require('child_process');
 const path = require("path")
 const express = require("express")
 const app = express()
@@ -9,50 +8,14 @@ app.use(express.static(path.join(__dirname, "public/")))
 app.use(express.static(path.join(__dirname, "attached_assets/")))
 
 app.get("/", (req,res) => {
-  exec('npx tailwindcss -i ./input.css -o ./public/out.css ', (err, stdout, stderr) => {
-  if (err) {
-    console.error('Tailwind build error:', err);
-    return;
-  }
-});
-  
-  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-  res.set('Pragma', 'no-cache');
-  res.set('Expires', '0');
-  res.set('Surrogate-Control', 'no-store');
-  
   res.sendFile(path.join(__dirname, "pages/index.html"))
 })
 
 app.get("/masterclass", (req,res) => {
-  exec('npx tailwindcss -i ./input.css -o ./public/out.css ', (err, stdout, stderr) => {
-  if (err) {
-    console.error('Tailwind build error:', err);
-    return;
-  }
-});
-  
-  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-  res.set('Pragma', 'no-cache');
-  res.set('Expires', '0');
-  res.set('Surrogate-Control', 'no-store');
-  
   res.sendFile(path.join(__dirname, "pages/masterclass.html"))
 })
 
 app.get("/admin", (req,res) => {
-  exec('npx tailwindcss -i ./input.css -o ./public/out.css ', (err, stdout, stderr) => {
-  if (err) {
-    console.error('Tailwind build error:', err);
-    return;
-  }
-});
-  
-  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-  res.set('Pragma', 'no-cache');
-  res.set('Expires', '0');
-  res.set('Surrogate-Control', 'no-store');
-  
   res.sendFile(path.join(__dirname, "pages/admin.html"))
 })
 
