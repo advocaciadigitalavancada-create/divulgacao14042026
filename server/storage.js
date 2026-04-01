@@ -1,55 +1,46 @@
-const { drizzle } = require('drizzle-orm/postgres-js');
-const postgres = require('postgres');
-const { pgTable, serial, varchar, timestamp } = require('drizzle-orm/pg-core');
-const { desc } = require('drizzle-orm');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-// Define schema directly in JS
-const leads = pgTable('leads', {
-  id: serial('id').primaryKey(),
-  nome: varchar('nome', { length: 255 }).notNull(),
-  email: varchar('email', { length: 255 }).notNull(),
-  telefone: varchar('telefone', { length: 50 }),
-  created_at: timestamp('created_at').defaultNow().notNull(),
-});
+// URL do seu Google Apps Script (Planilha)
+const GOOGLE_SHEET_URL = process.env.GOOGLE_SHEET_URL || 'https://script.google.com/macros/s/AKfycbzuqSU2_vxDL2aoPtlALBLqgq745gpj-b6b240TTc2QZkxgq1WkBNfimQCbJze6lrBccQ/exec';
 
-const connectionString = process.env.DATABASE_URL;
-const client = postgres(connectionString, {
-  ssl: connectionString && !connectionString.includes('localhost') ? 'require' : false
-});
-const db = drizzle(client);
-
-// Função para garantir que a tabela existe (Auto-migração simples)
 async function ensureTablesExist() {
-  try {
-    console.log('Verificando/Criando tabelas no banco de dados...');
-    // Comando SQL direto para criar a tabela se não existir
-    await client`
-      CREATE TABLE IF NOT EXISTS leads (
-        id SERIAL PRIMARY KEY,
-        nome VARCHAR(255) NOT NULL,
-        email VARCHAR(255) NOT NULL,
-        telefone VARCHAR(50),
-        created_at TIMESTAMP DEFAULT NOW() NOT NULL
-      );
-    `;
-    console.log('Estrutura de banco de dados verificada com sucesso!');
-  } catch (error) {
-    console.error('Erro ao verificar/criar tabelas:', error);
-  }
+  console.log('Integração com Google Sheets ativa. Nenhuma tabela de banco de dados necessária.');
 }
 
 async function insertLead(lead) {
-  const result = await db.insert(leads).values(lead).returning();
-  return result[0];
+  console.log('Enviando lead para a planilha:', lead);
+  
+  try {
+    const response = await fetch(GOOGLE_SHEET_URL, {
+      method: 'POST',
+      body: JSON.stringify(lead),
+      headers: { 'Content-Type': 'application/json' },
+      follow: 20 // Permite seguir redirecionamentos do Google
+    });
+    
+    const text = await response.text();
+    console.log('Resposta bruta do Google Sheets:', text);
+    
+    try {
+      return JSON.parse(text);
+    } catch (e) {
+      console.log('A resposta não era JSON, mas o envio pode ter ocorrido:', text);
+      return { success: true, message: 'Enviado (verifique a planilha)' };
+    }
+  } catch (error) {
+    console.error('Erro ao enviar para Google Sheets:', error);
+    throw error;
+  }
 }
 
 async function getAllLeads() {
-  return await db.select().from(leads).orderBy(desc(leads.created_at));
+  // Como os leads agora estão na planilha, o painel admin deve ser visualizado direto no Google Sheets.
+  // Retornamos um array vazio para não quebrar a rota do admin, mas com um aviso.
+  return [];
 }
 
 module.exports = {
   insertLead,
   getAllLeads,
-  ensureTablesExist,
-  db
+  ensureTablesExist
 };

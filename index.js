@@ -6,7 +6,7 @@ app.use(express.json())
 
 const { insertLead, getAllLeads, ensureTablesExist } = require('./server/storage')
 
-// Garante que as tabelas existam no banco de dados do Render assim que o servidor ligar
+// Log de inicialização do sistema com Planilha
 ensureTablesExist();
 
 app.use(express.static(path.join(__dirname, "public/")))
@@ -26,8 +26,9 @@ app.get("/admin", (req,res) => {
 
 app.get('/api/leads', async (req, res) => {
   const { password } = req.query;
+  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '9886';
   
-  if (password !== '9886') {
+  if (password !== ADMIN_PASSWORD) {
     return res.status(401).json({ success: false, error: 'Senha incorreta no servidor' });
   }
 
@@ -63,7 +64,7 @@ app.post('/api/leads', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Shipping on port ${PORT}`)
